@@ -1,0 +1,8 @@
+export const GOOGLE_SIGN_IN = "GOOGLE_SIGN_IN";
+export const GOOGLE_SIGN_OUT = "GOOGLE_SIGN_OUT";
+export const FACEBOOK_SIGN_IN = "FACEBOOK_SIGN_IN";
+export const FACEBOOK_SIGN_OUT = "FACEBOOK_SIGN_OUT";
+export const CREATE_ORDER = "CREATE_ORDER";
+export const DELETE_ORDER = "DELETE_ORDER";
+export const FETCH_ORDER = "FETCH_ORDER";
+export const TAKE_DATA_COUNTRY = "TAKE_DATA_COUNTRY";

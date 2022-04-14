@@ -1,0 +1,125 @@
+@media (max-width: 1250px) {
+  .card {
+    height: 50rem;
+  }
+
+  .blog-title:link,
+  .blog-title:visited {
+    height: 7rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .blogs-container {
+    max-width: 100rem;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 9.6rem;
+    row-gap: 4.8rem;
+  }
+
+  .card {
+    height: 54rem;
+    padding: 3.2rem;
+  }
+
+  .blog-img-container {
+    height: 24rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 1050px) {
+}
+
+@media (max-width: 1000px) {
+  .blogs-container {
+    max-width: 85rem;
+    column-gap: 6.4rem;
+  }
+
+  .footer {
+    column-gap: 8rem;
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+@media (max-width: 850px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .header {
+    grid-template-columns: 2fr 1.5fr;
+  }
+}
+
+@media (max-width: 750px) {
+  .blogs {
+    padding: 2.4rem 2.4rem 6.4rem 2.4rem;
+  }
+
+  .blogs-container {
+    row-gap: 3.2rem;
+    column-gap: 3.2rem;
+  }
+
+  .card {
+    height: 52rem;
+  }
+
+  .blog-img-container {
+    height: 17rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 50%;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .company-logo {
+    grid-row: 1;
+  }
+
+  .th-vega-logo {
+    width: 20%;
+  }
+
+  .media-logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .company-infors {
+    grid-row: 2;
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    max-width: 45rem;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+}
+
+@media (max-width: 350px) {
+}

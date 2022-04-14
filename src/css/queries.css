@@ -1,0 +1,518 @@
+@media (max-width: 1250px) {
+  .container {
+    max-width: 110rem;
+  }
+
+  .hero {
+    max-width: 120rem;
+    gap: 6.4rem;
+  }
+
+  .card {
+    height: 50rem;
+  }
+
+  .blog-title:link,
+  .blog-title:visited {
+    height: 7rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .testimonials {
+    height: 24.6rem;
+  }
+
+  .blogs-container {
+    max-width: 100rem;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 9.6rem;
+    row-gap: 4.8rem;
+  }
+
+  .card {
+    height: 54rem;
+    padding: 3.2rem;
+  }
+
+  .blog-img-container {
+    height: 24rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    padding: 1.2rem 2.4rem;
+  }
+
+  .heading-primary {
+    margin-bottom: 2.4rem;
+  }
+
+  .hero-description {
+    margin-bottom: 3.2rem;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .all-products {
+    max-width: 100rem;
+  }
+
+  .product-detail {
+    max-width: 95rem;
+  }
+
+  .testimonial {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 100rem;
+  }
+
+  .hero {
+    grid-template-columns: 1.1fr 1fr;
+  }
+
+  .testimonials-container {
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+
+  .testimonials {
+    height: 26.6rem;
+  }
+
+  .testimonial-left {
+    left: -5%;
+  }
+
+  .testimonial-right {
+    right: -5%;
+  }
+
+  .testimonial {
+    padding: 0.8rem;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .testimonial-title {
+    margin-bottom: 1.6rem;
+  }
+
+  .testimonial-content {
+    margin-bottom: 2.4rem;
+  }
+
+  .blogs-container {
+    max-width: 85rem;
+    column-gap: 6.4rem;
+  }
+
+  .footer {
+    column-gap: 8rem;
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 90rem;
+  }
+
+  .post-img,
+  .post-container {
+    max-width: 90rem;
+  }
+
+  .section-hero {
+    padding: 4.8rem 0 8rem 0;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .all-products,
+  .product-detail {
+    max-width: 90rem;
+  }
+
+  .detail-container {
+    padding: 1.2rem 2.4rem 0.6rem 2.4rem;
+  }
+
+  .testimonials-container {
+    max-width: 80rem;
+  }
+
+  .policy {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 80rem;
+  }
+
+  .post-img,
+  .post-container {
+    max-width: 75rem;
+  }
+
+  .header {
+    grid-template-columns: 2fr 1.5fr;
+  }
+
+  .body-container {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .header-nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+  }
+
+  .nav-open .header-nav {
+    transform: translateX(0);
+  }
+
+  .header-nav-list {
+    flex-direction: column;
+  }
+
+  .menu-btn {
+    display: inline-block;
+    z-index: 5;
+  }
+
+  .hero {
+    max-width: 80rem;
+  }
+
+  .hero.grid--2 {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .hero-text-box {
+    grid-row: 2;
+  }
+
+  .heading-primary {
+    text-align: center;
+  }
+
+  .hero-btns {
+    display: flex;
+    justify-content: center;
+  }
+
+  picture {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-img {
+    width: 90%;
+  }
+
+  .subheading.brand-heading {
+    margin-bottom: 0;
+  }
+
+  .all-products {
+    max-width: 60rem;
+  }
+
+  .product {
+    width: 40%;
+  }
+
+  .product-detail {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+
+  .detail-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+  }
+
+  .detail-benefit {
+    padding-left: 0;
+  }
+
+  .testimonials-container {
+    max-width: 50rem;
+  }
+
+  .testimonial-left {
+    left: -15%;
+  }
+
+  .testimonial-right {
+    right: -15%;
+  }
+
+  .testimonials {
+    height: 48rem;
+    padding: 2.4rem;
+  }
+
+  .testimonial {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-img-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .testimonial-img {
+    width: 50%;
+  }
+
+  .testimonial-text {
+    padding: 2.4rem 1.2rem 0 1.2rem;
+  }
+
+  .policy-container.grid--2 {
+    max-width: 60rem;
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+  }
+
+  .blogs-container {
+    max-width: 75rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .blogs {
+    padding: 2.4rem 2.4rem 6.4rem 2.4rem;
+  }
+
+  .blogs-container {
+    row-gap: 3.2rem;
+    column-gap: 3.2rem;
+  }
+
+  .card {
+    height: 52rem;
+  }
+
+  .blog-img-container {
+    height: 17rem;
+    margin-bottom: 2.4rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: 65rem;
+  }
+
+  .post-img,
+  .post-container {
+    max-width: 65rem;
+  }
+
+  .brands .flex-row {
+    max-width: 60rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.4rem;
+  }
+
+  .blogs-container {
+    max-width: 50rem;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    height: 54rem;
+  }
+
+  .blog-img-container {
+    height: 25rem;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    max-width: 70rem;
+  }
+
+  .post-img,
+  .post-container {
+    max-width: 70rem;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .company-logo {
+    grid-row: 1;
+  }
+
+  .th-vega-logo {
+    width: 20%;
+  }
+
+  .media-logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .company-infors {
+    grid-row: 2;
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 45rem;
+  }
+
+  .post-img,
+  .post-container {
+    max-width: 45rem;
+  }
+
+  .all-products {
+    max-width: 40rem;
+  }
+
+  .product {
+    width: 90%;
+    font-size: 1.8rem;
+  }
+
+  .product-btn {
+    font-size: 1.8rem;
+  }
+
+  .product-name {
+    width: 70%;
+  }
+
+  .move-left-btn {
+    left: -5%;
+  }
+
+  .move-right-btn {
+    right: -5%;
+  }
+
+  .product-detail {
+    max-width: 45rem;
+  }
+
+  .testimonials-container {
+    max-width: 37rem;
+  }
+
+  .testimonials {
+    height: 51rem;
+  }
+
+  .testimonial-img {
+    width: 60%;
+  }
+
+  .testimonial-left {
+    left: -10%;
+  }
+
+  .testimonial-right {
+    right: -10%;
+  }
+
+  .footer {
+    max-width: 45rem;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .hero {
+    padding: 0 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .hero-text-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading-primary {
+    align-self: center;
+  }
+
+  .th-vega-logo {
+    width: 30%;
+  }
+}
+
+@media (max-width: 350px) {
+  .hero-btns {
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2.4rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    padding: 1.6rem 3.2rem;
+  }
+
+  .hero-btn-product.btn {
+    margin-right: 0;
+    padding: 1.6rem 3.6rem;
+  }
+}
