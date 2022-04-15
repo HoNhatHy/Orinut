@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b41d637e.css",
+    "main.js": "/static/js/main.c4093d1b.js",
+    "static/media/thVega-logo-favicon.png": "/static/media/thVega-logo-favicon.47757ef08cc212e3cf09.png",
+    "static/media/google-icon-small.png": "/static/media/google-icon-small.ef8c5c58996f6a28f453.png",
+    "static/media/hero-img.jpg": "/static/media/hero-img.fe9c3491b27b233ba65f.jpg",
+    "index.html": "/index.html",
+    "main.b41d637e.css.map": "/static/css/main.b41d637e.css.map",
+    "main.c4093d1b.js.map": "/static/js/main.c4093d1b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b41d637e.css",
+    "static/js/main.c4093d1b.js"
+  ]
+}
