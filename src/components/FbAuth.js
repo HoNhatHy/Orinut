@@ -11,7 +11,7 @@ class FbAuth extends React.Component {
   componentDidMount() {
     window.fbAsyncInit = function () {
       window.FB.init({
-        appId: "960777267753735",
+        appId: "4985019058233489",
         cookie: true,
         xfbml: true,
         version: "v13.0",

@@ -8,7 +8,7 @@ class ModalPay extends React.Component {
   render() {
     return ReactDOM.createPortal(
       <div
-        className="modal modal-when-click"
+        className="modal-pay-box modal-when-click"
         onClick={() => {
           this.props.setModal(false);
           showScroll();
