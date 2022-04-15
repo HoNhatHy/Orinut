@@ -33,7 +33,6 @@ class FbAuth extends React.Component {
 
   login = () => {
     window.FB.login((response) => {
-      console.log(response);
       axios
         .get(
           `http://graph.facebook.com/${response.authResponse.userID}/picture?type=square`
@@ -44,9 +43,6 @@ class FbAuth extends React.Component {
               response.authResponse.userID,
               res.request.responseURL
             );
-          else {
-            console.log(response.status);
-          }
         });
     });
 
