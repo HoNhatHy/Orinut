@@ -1,10 +1,9 @@
 import React from "react";
 import "../css/general.css";
 import "../css/style.css";
-import "../css/queries.css";
-import "../css/blogQueries.css";
+// import "../css/queries.css";
+// import "../css/blogQueries.css";
 import { Router, Route, Switch } from "react-router-dom";
-// import { StickyNav } from "react-js-stickynav";
 
 import HeaderPage from "./HeaderPage";
 import Main from "./sub-components/Main";
@@ -18,7 +17,7 @@ import { australia, vegemil, elmhurst, degrees137 } from "../productStore";
 class App extends React.Component {
   render() {
     return (
-      <div className="body-container">
+      <div className={`body-container`}>
         <Router history={history}>
           <HeaderPage />
           <div>

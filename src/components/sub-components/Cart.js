@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { createOrder, takeDataCountry } from "../../actions";
 import ModalPay from "../ModalPay";
 import ModalAnnouce from "../ModalAnnouce";
+import hiddenScroll from "./hiddenScroll";
 
 const Cart = function (props) {
   const [reRender, setReRender] = useState(false);
@@ -129,9 +130,17 @@ const Cart = function (props) {
             if (!localStorage.getItem("productId")) return;
 
             setModal(true);
-            document
-              .querySelector(".header")
-              .scrollIntoView({ behavior: "smooth" });
+            if (!document.querySelector(".header.sticky")) {
+              document
+                .querySelector(".header")
+                .scrollIntoView({ behavior: "smooth", block: "start" });
+            } else {
+              document.querySelector(".main-container").scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+            hiddenScroll();
           }}
         >
           Tiến hành thanh toán

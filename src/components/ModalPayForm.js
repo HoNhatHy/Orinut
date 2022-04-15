@@ -5,6 +5,8 @@ import { connect } from "react-redux";
 import { createOrder } from "../actions";
 import history from "../history";
 
+import showScroll from "./sub-components/showScroll";
+
 const ModalPayForm = function ({
   cart,
   createOrder,
@@ -67,7 +69,13 @@ const ModalPayForm = function ({
   return (
     <div className="modal-pay" onClick={(e) => e.stopPropagation()}>
       <div className="pay-close">
-        <button className="btn modal-btn-close" onClick={() => setModal(false)}>
+        <button
+          className="btn modal-btn-close"
+          onClick={() => {
+            setModal(false);
+            showScroll();
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="icon"
@@ -193,7 +201,10 @@ const ModalPayForm = function ({
                   setPayMethod(e.target.value);
                 }}
               />
-              <label htmlFor="cash">Chuyển khoản qua ngân hàng</label>
+              <label htmlFor="cash">
+                Chuyển khoản qua ngân hàng (nhân viên sẽ liên hệ với khách để
+                thực hiện thanh toán)
+              </label>
             </div>
           </div>
         </form>

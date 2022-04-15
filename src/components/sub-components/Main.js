@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import MilkItem from "./MilkItem";
 import { highlight } from "../../productStore";
+import heroImg from "../images/hero-img.jpg";
 
 class Main extends React.Component {
   render() {
@@ -46,11 +47,7 @@ class Main extends React.Component {
             </div>
             <div className="hero-img-box">
               <picture>
-                <img
-                  src="https://thvega.netlify.app/hero-img.4f05adb6.jpg"
-                  alt="Sữa TH Suha"
-                  className="hero-img"
-                />
+                <img src={heroImg} alt="Sữa Orinut" className="hero-img" />
               </picture>
             </div>
           </div>
@@ -146,6 +143,7 @@ class Main extends React.Component {
               {highlight.map((item) => {
                 return (
                   <MilkItem
+                    key={item.productId}
                     productName={item.productName}
                     productImg={item.productImg}
                     productPrice={item.productPrice}
@@ -159,7 +157,7 @@ class Main extends React.Component {
             <Link
               to="/san-pham"
               onClick={() =>
-                document.querySelector(".header").scrollIntoView({
+                document.querySelector(".main-container").scrollIntoView({
                   behavior: "smooth",
                 })
               }

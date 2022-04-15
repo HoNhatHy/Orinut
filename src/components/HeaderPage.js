@@ -4,6 +4,9 @@ import { connect } from "react-redux";
 
 import logo from "./images/thVega-logo-favicon.png";
 import LoginLogout from "./sub-components/LoginLogout";
+import hiddenScroll from "./sub-components/hiddenScroll";
+import scrollToMain from "./scrollToMain";
+import scrollToHeader from "./scrollToHeader";
 
 class HeaderPage extends React.Component {
   state = { modalWhenClick: "" };
@@ -34,10 +37,20 @@ class HeaderPage extends React.Component {
   }
 
   displayModal = () => {
+    if (document.querySelector(".header.sticky")) {
+      scrollToMain();
+    }
+
     this.setState({ modalWhenClick: "modal-when-click" });
+
+    hiddenScroll();
   };
 
   hideModal = () => {
+    if (document.querySelector(".header.sticky")) {
+      scrollToMain();
+    }
+
     this.setState({ modalWhenClick: "" });
   };
 
@@ -75,32 +88,60 @@ class HeaderPage extends React.Component {
     }
   };
 
-  scroll() {
-    document.querySelector(".main-container").scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }
-
   render() {
     return (
       <div className="header">
-        <Link to="/" className="header-logo" onClick={this.scroll}>
+        <Link
+          to="/"
+          className="header-logo"
+          onClick={() => {
+            if (document.querySelector(".header.sticky")) {
+              scrollToMain();
+            } else {
+              scrollToHeader();
+            }
+          }}
+        >
           <img src={logo} alt="Hnb Plant Milk" className="header-logo-img" />
         </Link>
         <nav className="header-nav">
           <ul className="header-nav-list">
-            <li onClick={this.scroll}>
+            <li
+              onClick={() => {
+                if (document.querySelector(".header.sticky")) {
+                  scrollToMain();
+                } else {
+                  scrollToHeader();
+                }
+              }}
+            >
               <Link to="/san-pham" className="btn header-nav-btn">
                 Sản phẩm
               </Link>
             </li>
-            <li onClick={this.scroll}>
+            <li
+              onClick={() => {
+                if (document.querySelector(".header.sticky")) {
+                  scrollToMain();
+                } else {
+                  scrollToHeader();
+                }
+              }}
+            >
               <Link to="/blog" className="btn header-nav-btn">
                 Blog
               </Link>
             </li>
-            <li onClick={this.scroll} className="cart">
+            <li
+              onClick={() => {
+                if (document.querySelector(".header.sticky")) {
+                  scrollToMain();
+                } else {
+                  scrollToHeader();
+                }
+              }}
+              className="cart"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="cart-icon"

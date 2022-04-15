@@ -14,7 +14,7 @@ export const australia = [
         Natri (40 mg)
     `,
     productOrigin: "Úc",
-    productExpire: "12 tháng. Sau khi mở hộp: 5 ngày",
+    productExpire: "12 tháng. Sau khi mở 1 hộp: 5 ngày",
     productInfor: `
     <p>Sữa Hạnh Nhân Không Đường Organic chứa nhiều dưỡng chất tốt cho sức khỏe cùng với các lợi ích dinh dưỡng:</p>
     <ul className="detail-benefit flex--column">        
@@ -25,7 +25,9 @@ export const australia = [
         <li>Không Cholesterol</li>
     </ul>
     `,
-    productPrice: 18000,
+    productPrice: 155000,
+    unit: "1 hộp",
+    volume: "1000ml",
     productImg:
       "https://australiasownfoods.com.au/wp-content/uploads/Almond-Milk-Unsweetened-700x700.jpg",
   },
@@ -44,7 +46,7 @@ export const australia = [
         Natri (40 mg)
     `,
     productOrigin: "Úc",
-    productExpire: "12 tháng. Sau khi mở hộp: 5 ngày",
+    productExpire: "12 tháng. Sau khi mở 1 hộp: 5 ngày",
     productInfor: `
     <p>Sữa Hạnh Nhân vị nguyên bản chứa nhiều dưỡng chất tốt cho sức khỏe, có vị ngọt nhẹ từ syrup cây Avage, cùng với các lợi ích dinh </p>
     <ul className="detail-benefit flex--column">        
@@ -55,7 +57,9 @@ export const australia = [
         <li>Không Cholesterol</li>
     </ul>
     `,
-    productPrice: 18000,
+    productPrice: 160000,
+    unit: "1 hộp",
+    volume: "1000ml",
     productImg:
       "https://australiasownfoods.com.au/wp-content/uploads/Almond-Milk-Original-700x700.jpg",
   },
@@ -73,7 +77,7 @@ export const australia = [
         Natri (44 mg)
     `,
     productOrigin: "Úc",
-    productExpire: "12 tháng. Sau khi mở hộp: 5 ngày",
+    productExpire: "12 tháng. Sau khi mở 1 hộp: 5 ngày",
     productInfor: `
     <p>Sữa dừa không đường được làm từ kem dừa Organic thơm ngon được trồng tại Úc. Lựa chọn hoàn hảo nếu bạn đang tìm kiếm một sản phẩm thay thế sữa và mang lại các giá trị dinh dưỡng:</p>
     <ul className="detail-benefit flex--column">        
@@ -83,7 +87,9 @@ export const australia = [
         <li>Không đường</li>
     </ul>
     `,
-    productPrice: 18000,
+    productPrice: 135000,
+    unit: "1 hộp",
+    volume: "1000ml",
     productImg:
       "https://australiasownfoods.com.au/wp-content/uploads/AOO-1L-Unsweetened-COCONUT-Angle-2019-700x700.png",
   },
@@ -103,7 +109,7 @@ export const australia = [
         Natri (68 mg)
     `,
     productOrigin: "Úc",
-    productExpire: "12 tháng. Sau khi mở hộp: 5 ngày",
+    productExpire: "12 tháng. Sau khi mở 1 hộp: 5 ngày",
     productInfor: `
     <p>Sữa gạo Australia's Own được làm từ gạo Organic nguyên chất. không chứa đường, có vị ngọt tự nhiên, đảm bảo các giá trị dinh dưỡng:</p>
     <ul className="detail-benefit flex--column">        
@@ -112,7 +118,9 @@ export const australia = [
         <li>Không Gluten</li>
     </ul>
     `,
-    productPrice: 18000,
+    productPrice: 120000,
+    unit: "1 hộp",
+    volume: "1000ml",
     productImg:
       "https://australiasownfoods.com.au/wp-content/uploads/AOO-1L-RICE-Original-Angle-2019-700x700.png",
   },
@@ -130,7 +138,7 @@ export const australia = [
     Natri (70 mg)
     `,
     productOrigin: "Úc",
-    productExpire: "12 tháng. Sau khi mở hộp: 5 ngày",
+    productExpire: "12 tháng. Sau khi mở 1 hộp: 5 ngày",
     productInfor: `
     <p>Sữa đậu nành không đường Australia's Own được làm từ 100% hạt đậu nành Organic trồng tại Úc.
     Chỉ với những nguyên liệu đơn giản và nguyên chất, là sự bổ sung hoàn hảo cho các món ăn, đồ uống và ngũ cốc không dùng sữa của bạn, đồng thời mang đến các giá trị dinh dưỡng:</p>
@@ -140,7 +148,9 @@ export const australia = [
         <li>Nguồn cung cấp Protein</li>
     </ul>
     `,
-    productPrice: 18000,
+    productPrice: 110000,
+    unit: "1 hộp",
+    volume: "1000ml",
     productImg:
       "https://australiasownfoods.com.au/wp-content/uploads/AOO-1L-Unsweetened-SOY-Angle-2019-700x700.png",
   },
@@ -159,7 +169,7 @@ export const australia = [
         Canxi (100 mg)
     `,
     productOrigin: "Úc",
-    productExpire: "12 tháng. Sau khi mở hộp: 5 ngày",
+    productExpire: "12 tháng. Sau khi mở 1 hộp: 5 ngày",
     productInfor: `
     <p>Sữa yến mạch không đường có vị kem thơm ngon được làm từ 100% yến mạch Organic được trồng và thu hoạch tốt nhất tại Úc.
     Hơn thế nữa, các lợi ích dinh dưỡng mà Australia's Own mang lại:</p>
@@ -170,7 +180,9 @@ export const australia = [
         <li>Không đường</li>
     </ul>
     `,
-    productPrice: 18000,
+    productPrice: 130000,
+    unit: "1 hộp",
+    volume: "1000ml",
     productImg:
       "https://australiasownfoods.com.au/wp-content/uploads/CD-22-00xx_AO-Organic-Oat_1L_FOP-Render-768x768.jpg",
   },
@@ -198,7 +210,9 @@ export const vegemil = [
       <p>Rất giàu dinh dưỡng và dễ tiêu thụ, có thể được sử dụng như một thay thế bữa ăn lành mạnh.</p>
       <p>Chứa canxi và vitamin D3, rất tốt cho sức khỏe của xương.</p>
     `,
-    productPrice: 18000,
+    productPrice: 70000,
+    unit: "1 lốc x 4 hộp",
+    volume: "190ml",
     productImg:
       "https://cdn.tgdd.vn/Products/Images/2943/219014/bhx/sua-dau-den-hanh-nhan-va-oc-cho-vegemil-hop-190ml-chua-100mg-calcium-202104090853101438.jpg",
   },
@@ -223,7 +237,9 @@ export const vegemil = [
       <p>Đậu nành đen chứa các chất dinh dưỡng tự nhiên như protein đậu nành, acid béo thiết yếu, oligosaccharid, chất xơ cũng và đặc biệt là anthocyanin  khiến làn da khỏe đẹp, chống oxy hóa và ngăn ngừa ung thư.</p>
       <p>Ngoài ra, 16 loại ngũ cốc bao gồm gạo lứt, lúa mì nguyên cám, kiều mạch, lúa mạch ... giúp bổ sung vitamin B, vitamin E và khoáng chất Hơn nữa, còn tạo độ thơm ngon hơn, át đi mùi đặc trưng của đậu nành.</p>
     `,
-    productPrice: 18000,
+    productPrice: 70000,
+    unit: "lốc x 4 hộp",
+    volume: "190ml",
     productImg:
       "https://cdn.tgdd.vn/Products/Images/2943/218889/bhx/sua-dau-den-va-16-vi-ngu-coc-vegemil-hop-190ml-202002181456442942.jpg",
   },
@@ -248,7 +264,9 @@ export const vegemil = [
       <p>Chứa vitamin D3 giúp hấp thu canxi giúp hình thành bộ khung và răng cho trẻ đang trong thời kỳ tăng trưởng và  đồng thời bổ sung canxi, vitamin B6, vitamin C, vitamin D, vitamin E, axit pantothenic, niacin và axit folic (mỗi khẩu phần (190ml) canxi 80mg, vitamin D3 2g).</p>
       <p>Chứa oligosaccharide đậu tương và chất xơ cho đường ruột khỏe mạnh</p>
     `,
-    productPrice: 18000,
+    productPrice: 70000,
+    unit: "lốc x 4 hộp",
+    volume: "190ml",
     productImg:
       "https://cdn.tgdd.vn/Products/Images/2943/219006/bhx/sua-dau-nanh-vegemil-pororo-loopy-huong-so-co-la-hop-190ml-202002181517085832.jpg",
   },
@@ -273,7 +291,9 @@ export const vegemil = [
       <p>Chứa vitamin D3 giúp hấp thu canxi giúp hình thành bộ khung và răng cho trẻ đang trong thời kỳ tăng trưởng và  đồng thời bổ sung canxi, vitamin B6, vitamin C, vitamin D, vitamin E, axit pantothenic, niacin và axit folic (mỗi khẩu phần (190ml) canxi 80mg, vitamin D3 2g).</p>
       <p>Chứa oligosaccharide đậu tương và chất xơ cho đường ruột khỏe mạnh</p>
     `,
-    productPrice: 18000,
+    productPrice: 70000,
+    unit: "1 lốc x 4 hộp",
+    volume: "190ml",
     productImg:
       "https://cdn.tgdd.vn/Products/Images/2943/218887/bhx/sua-dau-nanh-vegemil-pororo-crong-huong-chuoi-hop-190ml-202002171428599580.jpg",
   },
@@ -311,7 +331,9 @@ export const elmhurst = [
         <li>Không biến đổi gen</li>
       </ul>
     `,
-    productPrice: 18000,
+    productPrice: 260000,
+    unit: "1 hộp",
+    volume: "946ml",
     productImg:
       "https://cdn.naturamarket.ca/catalog/product/cache/d4b916af0486966841056846415bf5a8/m/i/milked-almonds-unsweetened-front-label-_1_-min.jpg",
   },
@@ -345,7 +367,9 @@ export const elmhurst = [
         <li>Không hương vị nhân tạo</li>
       </ul>
     `,
-    productPrice: 18000,
+    productPrice: 260000,
+    unit: "1 hộp",
+    volume: "946ml",
     productImg:
       "https://cdn.naturamarket.ca/catalog/product/cache/d4b916af0486966841056846415bf5a8/e/l/elmhurst_cashew_us_front.jpg",
   },
@@ -380,7 +404,9 @@ export const elmhurst = [
         <li>Không biến đổi gen</li>
       </ul>
     `,
-    productPrice: 18000,
+    productPrice: 260000,
+    unit: "1 hộp",
+    volume: "946ml",
     productImg:
       "https://cdn.naturamarket.ca/catalog/product/cache/d4b916af0486966841056846415bf5a8/m/i/milked-oats-unsweetened-front-label-_1_-min.jpg",
   },
@@ -415,7 +441,9 @@ export const elmhurst = [
         <li>Không biến đổi gen</li>
       </ul>
     `,
-    productPrice: 18000,
+    productPrice: 260000,
+    unit: "1 hộp",
+    volume: "946ml",
     productImg:
       "https://cdn.naturamarket.ca/catalog/product/cache/23856674e59da53df3f46b0be464b906/e/l/elmhurst_walnut_us_front.jpg",
   },
@@ -450,7 +478,9 @@ export const elmhurst = [
         <li>Không biến đổi gen</li>
       </ul>
     `,
-    productPrice: 18000,
+    productPrice: 260000,
+    unit: "1 hộp",
+    volume: "946ml",
     productImg:
       "https://i5.walmartimages.com/asr/74d82bb1-dc78-492b-885d-13dffce75d48_2.bfe4d959dad459b541f04128579ffedb.png",
   },
@@ -485,7 +515,9 @@ export const elmhurst = [
         <li>Không biến đổi gen</li>
       </ul>
     `,
-    productPrice: 18000,
+    productPrice: 260000,
+    unit: "1 hộp",
+    volume: "946ml",
     productImg:
       "https://cdn.naturamarket.ca/catalog/product/cache/d4b916af0486966841056846415bf5a8/e/l/elmhurst_cashew_us_front.jpg",
   },
@@ -521,7 +553,9 @@ export const elmhurst = [
         <li>Không biến đổi gen</li>
       </ul>
     `,
-    productPrice: 18000,
+    productPrice: 260000,
+    unit: "1 hộp",
+    volume: "946ml",
     productImg:
       "https://cdn.naturamarket.ca/catalog/product/cache/d4b916af0486966841056846415bf5a8/e/l/elmhurst-chocolate-oat-milk-946ml-front-min.jpg",
   },
@@ -558,7 +592,9 @@ export const degrees137 = [
         <li>Được kiểm tra là không chứa sữa bò, đậu nành, chất bảo quản hoặc các chất phụ gia khác.</li>
       </ul>
     `,
-    productPrice: 18000,
+    productPrice: 135000,
+    unit: "1 hộp",
+    volume: "1000ml",
     productImg:
       "https://file05.es.c01.co/upload/769CC75B9F0560CF/202102/5189385049502246905.jpg",
   },
@@ -592,7 +628,9 @@ export const degrees137 = [
         <li>Được kiểm tra là không chứa sữa bò, đậu nành, chất bảo quản hoặc các chất phụ gia khác.</li>
       </ul>
     `,
-    productPrice: 18000,
+    productPrice: 135000,
+    unit: "1 hộp",
+    volume: "1000ml",
     productImg:
       "https://file03.es.c01.co/upload/769CC75B9F0560CF/202102/4981213016439565936.jpg",
   },
@@ -627,7 +665,9 @@ export const degrees137 = [
         <li>Được kiểm tra là không chứa sữa bò, đậu nành, chất bảo quản hoặc các chất phụ gia khác.</li>
       </ul>
     `,
-    productPrice: 18000,
+    productPrice: 119000,
+    unit: "1 hộp",
+    volume: "1000ml",
     productImg:
       "https://www.wholesalemart.com.sg/wp-content/uploads/beverages/uht-milk/137-DEGREE-Almond-Milk-With-Malt-1ltr.jpg",
   },
@@ -660,7 +700,9 @@ export const degrees137 = [
         <li>Được kiểm tra là không chứa sữa bò, đậu nành, chất bảo quản hoặc các chất phụ gia khác.</li>
       </ul>
     `,
-    productPrice: 18000,
+    productPrice: 119000,
+    unit: "1 hộp",
+    volume: "1000ml",
     productImg:
       "https://file06.es.c01.co/upload/769CC75B9F0560CF/202102/5301320831491919756.jpg_350x310.ashx",
   },
@@ -687,7 +729,9 @@ export const degrees137 = [
         <li>Được kiểm tra là không chứa sữa bò, đậu nành, chất bảo quản hoặc các chất phụ gia khác.</li>
       </ul>
     `,
-    productPrice: 18000,
+    productPrice: 135000,
+    unit: "1 hộp",
+    volume: "1000ml",
     productImg: "https://cf.shopee.vn/file/b0ae25d026b23b6ac4ac099b493bd668",
   },
   {
@@ -713,7 +757,9 @@ export const degrees137 = [
         <li>Được kiểm tra là không chứa sữa bò, đậu nành, chất bảo quản hoặc các chất phụ gia khác.</li>
       </ul>
     `,
-    productPrice: 18000,
+    productPrice: 135000,
+    unit: "1 hộp",
+    volume: "1000ml",
     productImg:
       "https://image.ztore.com/images/ztore/production/product/750px/1028146_1.jpg?1553096604",
   },
@@ -735,7 +781,7 @@ export const highlight = [
         Natri (40 mg)
     `,
     productOrigin: "Úc",
-    productExpire: "12 tháng. Sau khi mở hộp: 5 ngày",
+    productExpire: "12 tháng. Sau khi mở 1 hộp: 5 ngày",
     productInfor: `
     <p>Sữa Hạnh Nhân Không Đường Organic chứa nhiều dưỡng chất tốt cho sức khỏe cùng với các lợi ích dinh dưỡng:</p>
     <ul className="detail-benefit flex--column">        

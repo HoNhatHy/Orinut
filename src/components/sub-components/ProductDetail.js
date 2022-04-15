@@ -43,7 +43,7 @@ const ProductDetail = function (props) {
             src={product.productImg}
           />
           <div className="detail-list">
-            <h3 className="detail-name">{product.productName}</h3>
+            <h3 className="detail-name">{`${product.productName} ${product.unit}`}</h3>
             <p className="detail-price">
               {product.productPrice.toLocaleString("vi", {
                 style: "currency",
@@ -66,6 +66,8 @@ const ProductDetail = function (props) {
               <p>{product.productIng}</p>
               <p className="detail-infor">Dinh dưỡng</p>
               <p>{product.productNutrient}</p>
+              <p className="detail-infor">Dung tích</p>
+              <p>{product.volume}</p>
               <p className="detail-infor">Hạn sử dụng</p>
               <p>{product.productExpire}</p>
             </div>

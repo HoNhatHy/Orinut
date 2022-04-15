@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { connect } from "react-redux";
 
 import logo from "./images/thVega-logo-favicon.png";
-import history from "../history";
+import showScroll from "./sub-components/showScroll";
 
 const Modal = function ({
   loginTitle,
@@ -17,14 +17,26 @@ const Modal = function ({
   status,
 }) {
   return ReactDOM.createPortal(
-    <div className={`modal ${modalWhenClick}`} onClick={hideModal}>
+    <div
+      className={`modal ${modalWhenClick}`}
+      onClick={() => {
+        hideModal();
+        showScroll();
+      }}
+    >
       <div
         onClick={(e) => e.stopPropagation()}
         className={`modal-container relative ${
           modalWhenClick === "modal-when-click" ? "moveDown" : "  "
         }`}
       >
-        <div className="modal-close" onClick={hideModal}>
+        <div
+          className="modal-close"
+          onClick={() => {
+            hideModal();
+            showScroll();
+          }}
+        >
           {actionCloseModal}
         </div>
         <div className="modal-logo">

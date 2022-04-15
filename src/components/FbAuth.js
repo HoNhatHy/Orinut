@@ -5,6 +5,7 @@ import axios from "axios";
 import { facebookSignIn, facebookSignOut } from "../actions/index";
 import logo from "./images/facebook-icon-small.png";
 import history from "../history";
+import showScroll from "./sub-components/showScroll";
 
 class FbAuth extends React.Component {
   componentDidMount() {
@@ -49,6 +50,8 @@ class FbAuth extends React.Component {
     });
 
     this.props.hideModal();
+
+    showScroll();
   };
 
   logout = () => {

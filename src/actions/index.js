@@ -7,9 +7,9 @@ import {
   DELETE_ORDER,
   FETCH_ORDER,
   TAKE_DATA_COUNTRY,
+  DARK_SCREEN,
 } from "./type";
 
-import history from "../history";
 import orders from "../apis/orders";
 import axios from "axios";
 
@@ -88,5 +88,12 @@ export const takeDataCountry = function () {
       type: TAKE_DATA_COUNTRY,
       payload: response.data,
     });
+  };
+};
+
+export const darkScreen = function () {
+  return {
+    type: DARK_SCREEN,
+    payload: "hidden-scroll",
   };
 };

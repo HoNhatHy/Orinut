@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { googleSignIn, googleSignOut } from "../actions";
 import logo from "./images/google-icon-small.png";
 import history from "../history";
+import showScroll from "./sub-components/showScroll";
 
 class GoogleAuth extends React.Component {
   componentDidMount() {
@@ -37,6 +38,8 @@ class GoogleAuth extends React.Component {
   onSignInClick = () => {
     this.auth.signIn();
     this.props.hideModal();
+
+    showScroll();
   };
 
   onSignOutClick = () => {
