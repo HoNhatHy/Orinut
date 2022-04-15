@@ -618,13 +618,26 @@ h4 {
   width: 100%;
   height: 0;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  padding-top: 1.2rem;
 }
 
 .modal-when-click {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-pay-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-container {
@@ -1193,19 +1206,19 @@ h4 {
         PAY FORM
 -----------------------*/
 .modal-pay {
+  position: relative;
   width: 120rem;
-  height: 60rem;
   background-color: #fff;
   display: grid;
   grid-template-columns: 2fr 1fr;
   border-radius: 2rem;
-  padding: 0 2.4rem;
+  padding: 2.4rem 2.4rem 1.2rem 2.4rem;
 }
 
 .pay-close {
-  grid-column: 2;
-  justify-self: end;
-  align-self: start;
+  position: absolute;
+  right: 1.5%;
+  top: 1.5%;
 }
 
 .pay--1 {
@@ -1234,13 +1247,13 @@ h4 {
 }
 
 .other-address {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 2.4rem;
+  row-gap: 1.2rem;
 }
 
 .pay-method {
   row-gap: 1.2rem;
+  margin-bottom: 3.6rem;
+  line-height: 1.5;
 }
 
 .label-address {
@@ -1248,7 +1261,7 @@ h4 {
   display: block;
 }
 
-.pay--2 div {
+.pay--2 .pay--2-sub {
   display: grid;
   grid-template-columns: 2fr 1fr;
   row-gap: 1.2rem;

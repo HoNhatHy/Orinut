@@ -95,7 +95,7 @@ const ModalPayForm = function ({
       <div className="pay--1">
         <p className="sub-heading">Orinut</p>
         <p className="pay-heading">Thông tin giao hàng</p>
-        <form className="pay-form flex--column">
+        <form className="pay-form grid--2">
           <div className="flex--column pay-form--1">
             <label htmlFor="payName">Họ và tên</label>
             <input
@@ -130,7 +130,7 @@ const ModalPayForm = function ({
               id="payAddress"
             />
           </div>
-          <div className="other-address">
+          <div className="other-address flex--column">
             <div>
               <label className="label-address" htmlFor="pay-province">
                 Chọn tỉnh / thành
@@ -180,37 +180,10 @@ const ModalPayForm = function ({
               />
             </div>
           </div>
-          <div className="pay-method flex--column">
-            <div>
-              <input
-                onChange={(e) => setPayMethod(e.target.value)}
-                type="radio"
-                id="cash"
-                name="drone"
-                value={payMethod}
-              />
-              <label htmlFor="cash">Thanh toán khi nhận hàng</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                id="cash"
-                name="drone"
-                value="chuyen khoan"
-                onChange={(e) => {
-                  setPayMethod(e.target.value);
-                }}
-              />
-              <label htmlFor="cash">
-                Chuyển khoản qua ngân hàng (nhân viên sẽ liên hệ với khách để
-                thực hiện thanh toán)
-              </label>
-            </div>
-          </div>
         </form>
       </div>
       <div className="pay--2 flex--column">
-        <div>
+        <div className="pay--2-sub">
           <p>Tạm tính</p>
           <p>
             {cart
@@ -235,7 +208,7 @@ const ModalPayForm = function ({
                 })}
           </p>
         </div>
-        <div>
+        <div className="pay--2-sub">
           <p>Tổng cộng</p>
           <p className="payment-amount">
             {cart
@@ -247,6 +220,33 @@ const ModalPayForm = function ({
                 currency: "VND",
               })}
           </p>
+        </div>
+        <div className="pay-method flex--column">
+          <div>
+            <input
+              onChange={(e) => setPayMethod(e.target.value)}
+              type="radio"
+              id="cash"
+              name="drone"
+              value={payMethod}
+            />
+            <label htmlFor="cash">Thanh toán khi nhận hàng</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="cash"
+              name="drone"
+              value="chuyen khoan"
+              onChange={(e) => {
+                setPayMethod(e.target.value);
+              }}
+            />
+            <label htmlFor="cash">
+              Chuyển khoản qua ngân hàng (nhân viên sẽ liên hệ với khách để thực
+              hiện thanh toán)
+            </label>
+          </div>
         </div>
         <button
           className="btn purchase-btn payment-btn"
