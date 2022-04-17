@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import { googleSignIn, googleSignOut } from "../actions";
-import logo from "./images/google-icon-small.png";
+import logo from "../images/google-icon-small.png";
 import history from "../history";
 import showScroll from "./sub-components/showScroll";
 

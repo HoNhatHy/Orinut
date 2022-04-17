@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import axios from "axios";
 
 import { facebookSignIn, facebookSignOut } from "../actions/index";
-import logo from "./images/facebook-icon-small.png";
+import logo from "../images/facebook-icon-small.png";
 import history from "../history";
 import showScroll from "./sub-components/showScroll";
 

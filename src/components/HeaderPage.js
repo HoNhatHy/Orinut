@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
-import logo from "./images/thVega-logo-favicon.png";
+import logo from "../images/thVega-logo-favicon.png";
 import LoginLogout from "./sub-components/LoginLogout";
 import hiddenScroll from "./sub-components/hiddenScroll";
 import scrollToMain from "./scrollToMain";

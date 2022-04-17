@@ -11,7 +11,7 @@ import Products from "./sub-components/Products";
 import ProductDetail from "./sub-components/ProductDetail";
 import Cart from "./sub-components/Cart";
 import history from "../history";
-import logo from "./images/thVega-logo-favicon.png";
+import logo from "../images/thVega-logo-favicon.png";
 import { australia, vegemil, elmhurst, degrees137 } from "../productStore";
 
 class App extends React.Component {

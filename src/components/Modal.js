@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { connect } from "react-redux";
 
-import logo from "./images/thVega-logo-favicon.png";
+import logo from "../images/thVega-logo-favicon.png";
 import showScroll from "./sub-components/showScroll";
 
 const Modal = function ({

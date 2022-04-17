@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import MilkItem from "./MilkItem";
 import { highlight } from "../../productStore";
-import heroImg from "../images/hero-img.jpg";
+import heroImg from "../../images/hero-img.jpg";
 
 class Main extends React.Component {
   render() {

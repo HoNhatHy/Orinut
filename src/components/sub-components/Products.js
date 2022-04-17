@@ -91,16 +91,19 @@ class Products extends React.Component {
             </h3>
           </div>
           <div className="milk-items grid--4">
-            {australia.map((item) => (
-              <MilkItem
-                productImg={item.productImg}
-                productName={item.productName}
-                productPrice={item.productPrice}
-                productId={item.productId}
-                productUrl={item.productUrl}
-                key={item.productId}
-              />
-            ))}
+            {australia.map((item) => {
+              console.log(item.productImg);
+              return (
+                <MilkItem
+                  productImg={item.productImg}
+                  productName={item.productName}
+                  productPrice={item.productPrice}
+                  productId={item.productId}
+                  productUrl={item.productUrl}
+                  key={item.productId}
+                />
+              );
+            })}
           </div>
         </div>
         <div className="container milk-type-container">

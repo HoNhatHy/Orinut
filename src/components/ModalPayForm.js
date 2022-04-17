@@ -67,7 +67,7 @@ const ModalPayForm = function ({
   console.log(totalPrice);
 
   return (
-    <div className="modal-pay" onClick={(e) => e.stopPropagation()}>
+    <form className="modal-pay" onClick={(e) => e.stopPropagation()}>
       <div className="pay-close">
         <button
           className="btn modal-btn-close"
@@ -95,7 +95,7 @@ const ModalPayForm = function ({
       <div className="pay--1">
         <p className="sub-heading">Orinut</p>
         <p className="pay-heading">Thông tin giao hàng</p>
-        <form className="pay-form grid--2">
+        <div className="pay-form grid--2">
           <div className="flex--column pay-form--1">
             <label htmlFor="payName">Họ và tên</label>
             <input
@@ -104,6 +104,7 @@ const ModalPayForm = function ({
               type="text"
               className="pay purchase-input"
               id="payName"
+              required
             />
             <label htmlFor="payPhone">Số điện thoại</label>
             <input
@@ -112,6 +113,7 @@ const ModalPayForm = function ({
               className="pay purchase-input"
               id="payPhone"
               type="tel"
+              required
             />
             <label htmlFor="payEmail">Email</label>
             <input
@@ -120,6 +122,7 @@ const ModalPayForm = function ({
               className="pay purchase-input"
               id="payEmail"
               type="email"
+              required
             />
             <label htmlFor="payAddress">Địa chỉ</label>
             <input
@@ -128,6 +131,7 @@ const ModalPayForm = function ({
               type="text"
               className="pay purchase-input"
               id="payAddress"
+              required
             />
           </div>
           <div className="other-address flex--column">
@@ -180,7 +184,7 @@ const ModalPayForm = function ({
               />
             </div>
           </div>
-        </form>
+        </div>
       </div>
       <div className="pay--2 flex--column">
         <div className="pay--2-sub">
@@ -250,7 +254,7 @@ const ModalPayForm = function ({
         </div>
         <button
           className="btn purchase-btn payment-btn"
-          onClick={() => {
+          onClick={(e) => {
             createOrder({
               ...formValues,
             });
@@ -260,12 +264,13 @@ const ModalPayForm = function ({
             setTimeout(function () {
               history.push("/san-pham");
             }, 3000);
+            showScroll();
           }}
         >
           Hoàn tất đơn hàng
         </button>
       </div>
-    </div>
+    </form>
   );
 };
 

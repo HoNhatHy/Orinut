@@ -77,11 +77,11 @@ const ProductDetail = function (props) {
       <div className="container other-infor-container">
         <div className="other-infor">
           <span className="other-infor-heading">Thông tin khác</span>
-          {/* <div
+          <div
             dangerouslySetInnerHTML={{
               __html: DOMPurify.sanitize(product.productInfor),
             }}
-          ></div> */}
+          ></div>
         </div>
       </div>
       <div className="container related-products">

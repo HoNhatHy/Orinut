@@ -1,16 +1,37 @@
 {
   "files": {
-    "main.css": "/static/css/main.b41d637e.css",
-    "main.js": "/static/js/main.c4093d1b.js",
+    "main.css": "/static/css/main.315a619f.css",
+    "main.js": "/static/js/main.e887d40c.js",
     "static/media/thVega-logo-favicon.png": "/static/media/thVega-logo-favicon.47757ef08cc212e3cf09.png",
     "static/media/google-icon-small.png": "/static/media/google-icon-small.ef8c5c58996f6a28f453.png",
+    "static/media/sua-hanh-nhan-bo-va-rau-cu.jpg": "/static/media/sua-hanh-nhan-bo-va-rau-cu.1b54ded645833706338c.jpg",
+    "static/media/australia-rice-milk-original.png": "/static/media/australia-rice-milk-original.02489627d54b68da6464.png",
+    "static/media/australia-coconut-milk-unsweetened.png": "/static/media/australia-coconut-milk-unsweetened.c4c496b88249b627bbb0.png",
+    "static/media/australia-soy-milk-unsweetened.png": "/static/media/australia-soy-milk-unsweetened.b7d3d59956e470c02a20.png",
     "static/media/hero-img.jpg": "/static/media/hero-img.fe9c3491b27b233ba65f.jpg",
+    "static/media/sua-hanh-nhan-voi-lua-mach.jpg": "/static/media/sua-hanh-nhan-voi-lua-mach.a545a2d231b4bf05c6f2.jpg",
+    "static/media/sua-dau-nanh-pororo-loopy-huong-chuoi.jpg": "/static/media/sua-dau-nanh-pororo-loopy-huong-chuoi.08230a681d76e553eecd.jpg",
+    "static/media/sua-dau-nanh-pororo-loopy-huong-socola.jpg": "/static/media/sua-dau-nanh-pororo-loopy-huong-socola.08230a681d76e553eecd.jpg",
+    "static/media/sua-hanh-nhan-ca-rot-va-rau-cu.jpg": "/static/media/sua-hanh-nhan-ca-rot-va-rau-cu.c64f19ee912e9dadd442.jpg",
+    "static/media/sua-dau-den-va-16-vi-ngu-coc.jpg": "/static/media/sua-dau-den-va-16-vi-ngu-coc.1fec7825ed017abbeb2f.jpg",
+    "static/media/hazelnut-milk-unsweetened.png": "/static/media/hazelnut-milk-unsweetened.c181acbb50cd7dbef8bc.png",
+    "static/media/sua-hanh-nhan-voi-bap.jpg": "/static/media/sua-hanh-nhan-voi-bap.6fea3f40488260a96472.jpg",
+    "static/media/sua-dau-den-hanh-nhan-va-oc-cho.jpeg": "/static/media/sua-dau-den-hanh-nhan-va-oc-cho.eeb973464d0e6bde5a1d.jpeg",
+    "static/media/almond-milk-unsweetened.jpg": "/static/media/almond-milk-unsweetened.1935a05b034b5c1c8a01.jpg",
+    "static/media/sua-oc-cho-nguyen-chat.jpg": "/static/media/sua-oc-cho-nguyen-chat.7c969cd73ce8d1c24a50.jpg",
+    "static/media/oat-milk-unsweetened.jpg": "/static/media/oat-milk-unsweetened.f7da3a3db949da1dbc4b.jpg",
+    "static/media/sua-hat-de-cuoi-nguyen-chat.jpg": "/static/media/sua-hat-de-cuoi-nguyen-chat.ed128f82d2d6c0c2a043.jpg",
+    "static/media/walnut-milk-unsweetened.jpg": "/static/media/walnut-milk-unsweetened.148811f5efdb1a683474.jpg",
+    "static/media/cashew-milk-unsweetened.jpg": "/static/media/cashew-milk-unsweetened.909ab256e728e35bb3d8.jpg",
+    "static/media/cashew-milk.jpg": "/static/media/cashew-milk.909ab256e728e35bb3d8.jpg",
+    "static/media/chocolate-oat-milk.jpg": "/static/media/chocolate-oat-milk.b986755b6003497c52e2.jpg",
+    "static/media/australia-oat-milk-unsweetened.jpg": "/static/media/australia-oat-milk-unsweetened.6de6920e38880902e0b5.jpg",
     "index.html": "/index.html",
-    "main.b41d637e.css.map": "/static/css/main.b41d637e.css.map",
-    "main.c4093d1b.js.map": "/static/js/main.c4093d1b.js.map"
+    "main.315a619f.css.map": "/static/css/main.315a619f.css.map",
+    "main.e887d40c.js.map": "/static/js/main.e887d40c.js.map"
   },
   "entrypoints": [
-    "static/css/main.b41d637e.css",
-    "static/js/main.c4093d1b.js"
+    "static/css/main.315a619f.css",
+    "static/js/main.e887d40c.js"
   ]
 }
