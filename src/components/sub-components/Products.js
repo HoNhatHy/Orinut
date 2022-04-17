@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 
 import { australia, vegemil, elmhurst, degrees137 } from "../../productStore";
 import MilkItem from "./MilkItem";
+import australiaImg from "../../images/australia.png";
+import vegemilImg from "../../images/vegemil.jpg";
+import elmhurstImg from "../../images/elmhurst.webp";
+import degreeImg from "../../images/degree.jpeg";
 
 class Products extends React.Component {
   constructor(props) {
@@ -43,7 +47,7 @@ class Products extends React.Component {
               >
                 <img
                   className="type-img"
-                  src="https://cf.shopee.vn/file/e5673c2b3735c006e8ed411528fd57f8"
+                  src={australiaImg}
                   alt="Australia’s Own Organic"
                 ></img>
                 <p>Australia’s Own Organic</p>
@@ -52,11 +56,7 @@ class Products extends React.Component {
                 className="type flex--column"
                 onClick={() => this.scrollToView(this.milkTypes[1])}
               >
-                <img
-                  className="type-img"
-                  src="https://media.bibomart.com.vn/resize.1170x-/media/catalog/product/s/u/sua-hat-vegemil-cho-ba-bau-va-cho-con-bu-190ml.jpg"
-                  alt="Vegemil"
-                ></img>
+                <img className="type-img" src={vegemilImg} alt="Vegemil"></img>
                 <p>Vegemil</p>
               </li>
               <li
@@ -65,7 +65,7 @@ class Products extends React.Component {
               >
                 <img
                   className="type-img"
-                  src="https://ph-live-05.slatic.net/p/daec434a443a36cc2a9311a61c68c919.jpg_2200x2200q80.jpg_.webp"
+                  src={elmhurstImg}
                   alt="Elmhurst 1925"
                 ></img>
                 <p>Elmhurst 1925</p>
@@ -76,7 +76,7 @@ class Products extends React.Component {
               >
                 <img
                   className="type-img"
-                  src="https://media.bibomart.com.vn/resize.1170x-/media/catalog/product/h/t/httpsmedia.bibomart.netubbmproduct201801242146sua-hat-hanh-nhan-nguyen-chat-137-degrees-1l-116951_1.jpg"
+                  src={degreeImg}
                   alt="137 Degrees"
                 ></img>
                 <p>137 Degrees</p>
