@@ -1,14 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.315a619f.css",
-    "main.js": "/static/js/main.e887d40c.js",
+    "main.js": "/static/js/main.e05b67da.js",
     "static/media/thVega-logo-favicon.png": "/static/media/thVega-logo-favicon.47757ef08cc212e3cf09.png",
+    "static/media/degree.jpeg": "/static/media/degree.ad37b286efcdc93aeafc.jpeg",
+    "static/media/australia.png": "/static/media/australia.7707823b0be504189aa5.png",
+    "static/media/vegemil.jpg": "/static/media/vegemil.2162bf278eca3a8e9fe6.jpg",
     "static/media/google-icon-small.png": "/static/media/google-icon-small.ef8c5c58996f6a28f453.png",
     "static/media/sua-hanh-nhan-bo-va-rau-cu.jpg": "/static/media/sua-hanh-nhan-bo-va-rau-cu.1b54ded645833706338c.jpg",
     "static/media/australia-rice-milk-original.png": "/static/media/australia-rice-milk-original.02489627d54b68da6464.png",
     "static/media/australia-coconut-milk-unsweetened.png": "/static/media/australia-coconut-milk-unsweetened.c4c496b88249b627bbb0.png",
     "static/media/australia-soy-milk-unsweetened.png": "/static/media/australia-soy-milk-unsweetened.b7d3d59956e470c02a20.png",
     "static/media/hero-img.jpg": "/static/media/hero-img.fe9c3491b27b233ba65f.jpg",
+    "static/media/elmhurst.webp": "/static/media/elmhurst.24dd4ba1f2e2b93917ad.webp",
     "static/media/sua-hanh-nhan-voi-lua-mach.jpg": "/static/media/sua-hanh-nhan-voi-lua-mach.a545a2d231b4bf05c6f2.jpg",
     "static/media/sua-dau-nanh-pororo-loopy-huong-chuoi.jpg": "/static/media/sua-dau-nanh-pororo-loopy-huong-chuoi.08230a681d76e553eecd.jpg",
     "static/media/sua-dau-nanh-pororo-loopy-huong-socola.jpg": "/static/media/sua-dau-nanh-pororo-loopy-huong-socola.08230a681d76e553eecd.jpg",
@@ -28,10 +32,10 @@
     "static/media/australia-oat-milk-unsweetened.jpg": "/static/media/australia-oat-milk-unsweetened.6de6920e38880902e0b5.jpg",
     "index.html": "/index.html",
     "main.315a619f.css.map": "/static/css/main.315a619f.css.map",
-    "main.e887d40c.js.map": "/static/js/main.e887d40c.js.map"
+    "main.e05b67da.js.map": "/static/js/main.e05b67da.js.map"
   },
   "entrypoints": [
     "static/css/main.315a619f.css",
-    "static/js/main.e887d40c.js"
+    "static/js/main.e05b67da.js"
   ]
 }

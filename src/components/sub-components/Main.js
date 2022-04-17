@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import MilkItem from "./MilkItem";
 import { highlight } from "../../productStore";
 import heroImg from "../../images/hero-img.jpg";
+import australia from "../../images/australia.png";
+import vegemil from "../../images/vegemil.jpg";
+import elmhurst from "../../images/elmhurst.webp";
+import degree from "../../images/degree.jpeg";
 
 class Main extends React.Component {
   render() {
@@ -75,15 +79,11 @@ class Main extends React.Component {
               <img
                 className="brand-img"
                 alt="Australia’s Own Organic"
-                src="https://cf.shopee.vn/file/e5673c2b3735c006e8ed411528fd57f8"
+                src={australia}
               />
             </div>
             <div className="brand-img-box">
-              <img
-                className="brand-img"
-                alt="Australia’s Own Organic"
-                src="https://media.bibomart.com.vn/resize.1170x-/media/catalog/product/s/u/sua-hat-vegemil-cho-ba-bau-va-cho-con-bu-190ml.jpg"
-              />
+              <img className="brand-img" alt="Vegemil" src={vegemil} />
             </div>
             <div className="brand-box">
               <p className="brand-number">02</p>
@@ -111,18 +111,10 @@ class Main extends React.Component {
               </p>
             </div>
             <div className="brand-img-box">
-              <img
-                className="brand-img"
-                alt="Australia’s Own Organic"
-                src="https://ph-live-05.slatic.net/p/daec434a443a36cc2a9311a61c68c919.jpg_2200x2200q80.jpg_.webp"
-              />
+              <img className="brand-img" alt="Elmhurst 1925" src={elmhurst} />
             </div>
             <div className="brand-img-box">
-              <img
-                className="brand-img"
-                alt="Australia’s Own Organic"
-                src="https://cf.shopee.vn/file/d97ec42c994c911810d40e4b509073ff"
-              />
+              <img className="brand-img" alt="137 Degree" src={degree} />
             </div>
             <div className="brand-box">
               <p className="brand-number">04</p>
