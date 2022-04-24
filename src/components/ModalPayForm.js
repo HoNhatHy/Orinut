@@ -4,6 +4,7 @@ import Select from "react-select";
 import { connect } from "react-redux";
 import { createOrder } from "../actions";
 import history from "../history";
+import Error from "./Error";
 
 import showScroll from "./sub-components/showScroll";
 
@@ -13,11 +14,12 @@ const ModalPayForm = function ({
   setModal,
   setModalAnnounce,
 }) {
+  const [err, setErr] = useState(null);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [address, setAddress] = useState("");
-  const [payMethod, setPayMethod] = useState("tien mat");
+  const [payMethod, setPayMethod] = useState("");
   const { state, onCitySelect, onDistrictSelect, onWardSelect } =
     useLocationForm(true);
 
@@ -63,35 +65,8 @@ const ModalPayForm = function ({
     payMethod,
   };
 
-  console.log(JSON.parse(localStorage.getItem("totalPrice")));
-  console.log(totalPrice);
-
   return (
     <form className="modal-pay" onClick={(e) => e.stopPropagation()}>
-      <div className="pay-close">
-        <button
-          className="btn modal-btn-close"
-          onClick={() => {
-            setModal(false);
-            showScroll();
-          }}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="icon"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-      </div>
       <div className="pay--1">
         <p className="sub-heading">Orinut</p>
         <p className="pay-heading">Thông tin giao hàng</p>
@@ -232,7 +207,7 @@ const ModalPayForm = function ({
               type="radio"
               id="cash"
               name="drone"
-              value={payMethod}
+              value="tien mat"
             />
             <label htmlFor="cash">Thanh toán khi nhận hàng</label>
           </div>
@@ -255,6 +230,25 @@ const ModalPayForm = function ({
         <button
           className="btn purchase-btn payment-btn"
           onClick={(e) => {
+            e.preventDefault();
+
+            if (formValues.name === "") {
+              setErr("nhập họ và tên");
+              return;
+            } else if (formValues.phone === "") {
+              setErr("nhập số điện thoại");
+              return;
+            } else if (formValues.email === "") {
+              setErr("nhập email");
+              return;
+            } else if (formValues.address === "") {
+              setErr("nhập địa chỉ");
+              return;
+            } else if (formValues.payMethod === "") {
+              setErr("chọn phương thức thanh toán");
+              return;
+            }
+
             createOrder({
               ...formValues,
             });
@@ -269,6 +263,7 @@ const ModalPayForm = function ({
         >
           Hoàn tất đơn hàng
         </button>
+        {err === null ? null : <Error content={err} />}
       </div>
     </form>
   );

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 import { createOrder, takeDataCountry } from "../../actions";
 import ModalPay from "../ModalPay";
@@ -76,86 +77,98 @@ const Cart = function (props) {
   };
 
   return (
-    <div className="gray-background cart-container">
-      <div className="related-products relative">
-        <span className="sub-heading cart-heading">Giỏ hàng</span>
-        {JSON.parse(localStorage.getItem("productId")) ? renderCart() : null}
-        {JSON.parse(localStorage.getItem("productId")) ? (
+    <div>
+      <div className="navigate-bar">
+        <div className="container navigate-bar-box">
+          <span className="navigate-item">
+            <Link to="/" className="navigate-item-link">
+              Trang chủ
+            </Link>
+          </span>
+          <span className="navigate-item">Giỏ hàng</span>
+        </div>
+      </div>
+      <div className="gray-background cart-container">
+        <div className="related-products relative">
+          <span className="sub-heading cart-heading">Giỏ hàng</span>
+          {JSON.parse(localStorage.getItem("productId")) ? renderCart() : null}
+          {JSON.parse(localStorage.getItem("productId")) ? (
+            <button
+              className="btn garbage-btn"
+              onClick={() => {
+                localStorage.clear();
+                if (reRender) {
+                  setTimeout(function () {
+                    setReRender(false);
+                  }, 1000);
+                } else
+                  setTimeout(function () {
+                    setReRender(true);
+                  }, 1000);
+              }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="garbage-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                />
+              </svg>
+            </button>
+          ) : null}
+        </div>
+        <div className="payment">
+          <p className="payment-heading">Tạm tính:</p>
+          <p className="payment-amount">
+            {cart
+              .reduce((sum, item) => {
+                return sum + item.totalPrice;
+              }, 0)
+              .toLocaleString("vi", {
+                style: "currency",
+                currency: "VND",
+              })}
+          </p>
           <button
-            className="btn garbage-btn"
+            className="btn purchase-btn payment-btn"
             onClick={() => {
-              localStorage.clear();
-              if (reRender) {
-                setTimeout(function () {
-                  setReRender(false);
-                }, 1000);
-              } else
-                setTimeout(function () {
-                  setReRender(true);
-                }, 1000);
+              if (!localStorage.getItem("productId")) return;
+
+              setModal(true);
+              if (!document.querySelector(".header.sticky")) {
+                document
+                  .querySelector(".header")
+                  .scrollIntoView({ behavior: "smooth", block: "start" });
+              } else {
+                document.querySelector(".main-container").scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }
+              hiddenScroll();
             }}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="garbage-icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
-              />
-            </svg>
+            Tiến hành thanh toán
           </button>
+        </div>
+        {modal ? (
+          <ModalPay
+            setModalAnnounce={setModalAnnounce}
+            setModal={setModal}
+            cart={cart}
+          />
+        ) : null}
+        {modalAnnouce ? (
+          <ModalAnnouce title="Đặt hàng thành công. Chúng tôi sẽ gửi chi tiết đơn hàng qua Email cho bạn!" />
         ) : null}
       </div>
-      <div className="payment">
-        <p className="payment-heading">Tạm tính:</p>
-        <p className="payment-amount">
-          {cart
-            .reduce((sum, item) => {
-              return sum + item.totalPrice;
-            }, 0)
-            .toLocaleString("vi", {
-              style: "currency",
-              currency: "VND",
-            })}
-        </p>
-        <button
-          className="btn purchase-btn payment-btn"
-          onClick={() => {
-            if (!localStorage.getItem("productId")) return;
-
-            setModal(true);
-            if (!document.querySelector(".header.sticky")) {
-              document
-                .querySelector(".header")
-                .scrollIntoView({ behavior: "smooth", block: "start" });
-            } else {
-              document.querySelector(".main-container").scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              });
-            }
-            hiddenScroll();
-          }}
-        >
-          Tiến hành thanh toán
-        </button>
-      </div>
-      {modal ? (
-        <ModalPay
-          setModalAnnounce={setModalAnnounce}
-          setModal={setModal}
-          cart={cart}
-        />
-      ) : null}
-      {modalAnnouce ? (
-        <ModalAnnouce title="Đặt hàng thành công. Chúng tôi sẽ gửi chi tiết đơn hàng qua Email cho bạn!" />
-      ) : null}
     </div>
   );
 };

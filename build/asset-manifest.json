@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.315a619f.css",
-    "main.js": "/static/js/main.94d93c5f.js",
+    "main.css": "/static/css/main.06f66038.css",
+    "main.js": "/static/js/main.f322b2bc.js",
     "static/media/thVega-logo-favicon.png": "/static/media/thVega-logo-favicon.47757ef08cc212e3cf09.png",
+    "static/media/lazada.png": "/static/media/lazada.e58a39228ba5021f4ff0.png",
     "static/media/degree.jpeg": "/static/media/degree.ad37b286efcdc93aeafc.jpeg",
     "static/media/australia.png": "/static/media/australia.7707823b0be504189aa5.png",
     "static/media/vegemil.jpg": "/static/media/vegemil.2162bf278eca3a8e9fe6.jpg",
@@ -31,11 +32,11 @@
     "static/media/chocolate-oat-milk.jpg": "/static/media/chocolate-oat-milk.b986755b6003497c52e2.jpg",
     "static/media/australia-oat-milk-unsweetened.jpg": "/static/media/australia-oat-milk-unsweetened.6de6920e38880902e0b5.jpg",
     "index.html": "/index.html",
-    "main.315a619f.css.map": "/static/css/main.315a619f.css.map",
-    "main.94d93c5f.js.map": "/static/js/main.94d93c5f.js.map"
+    "main.06f66038.css.map": "/static/css/main.06f66038.css.map",
+    "main.f322b2bc.js.map": "/static/js/main.f322b2bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.315a619f.css",
-    "static/js/main.94d93c5f.js"
+    "static/css/main.06f66038.css",
+    "static/js/main.f322b2bc.js"
   ]
 }

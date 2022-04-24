@@ -17,13 +17,13 @@ class Main extends React.Component {
           <div className="hero grid--2">
             <div className="hero-text-box">
               <h1 className="heading-primary">
-                Orinut &mdash; Sữa hạt nguyên bản
+                <span>Orinut &mdash; Sữa hạt nguyên bản</span>
+                <p className="hero-description">
+                  Orinut là hệ thống chuyên phân phối những sản phẩm sữa hạt
+                  chất lượng có nguồn gốc nhập khẩu. Đảm bảo cho bạn có được
+                  nguồn sữa đầy đủ dinh dưỡng với giá cả hợp lý.
+                </p>
               </h1>
-              <p className="hero-description">
-                Orinut là hệ thống chuyên phân phối những sản phẩm sữa hạt chất
-                lượng có nguồn gốc cả trong lẫn ngoài nước. Đảm bảo cho bạn có
-                được nguồn sữa đầy đủ dinh dưỡng với giá cả hợp lý.
-              </p>
               <div className="hero-btns">
                 <Link
                   to="/san-pham"
@@ -159,6 +159,48 @@ class Main extends React.Component {
             </Link>
           </div>
         </section>
+        <section className="section-policy border-bottom">
+          <div className="container">
+            <span className="policy-heading sub-heading">Chính sách</span>
+            <div className="grid--2 policy-container">
+              <div className="policy">
+                <h2>Chính sách mua hàng</h2>
+                <ul>
+                  <li>
+                    Chi phí vận chuyển trong khu vực thành phố Hồ Chí Minh là
+                    20.000đ và là 30.000đ tại các khu vực khác.
+                  </li>
+                  <li>
+                    Miễn phí giao hàng đối với đơn hàng có giá trị trên
+                    1.000.000đ trên toàn quốc.
+                  </li>
+                  <li>
+                    Cách thức thanh toán bao gồm: thanh toán khi giao hàng và
+                    thanh toán trực tuyến
+                  </li>
+                </ul>
+              </div>
+              <div className="policy">
+                <h2>Chính sách trả hàng</h2>
+                <ul>
+                  <li>
+                    Quý khách được kiểm tra hàng trước khi nhận. Nếu sản phẩm bị
+                    hư hoặc hết hạn sử dụng, Orinut sẽ thu hồi sản phẩm và gửi
+                    một đơn hàng khác có cùng sản phẩm đồng thời cũng sẽ trả lại
+                    một nửa giá trị đơn hàng cho quý khách.
+                  </li>
+                  <li>
+                    Trường hợp sản phẩm giao không đúng yêu cầu, Orinut sẽ thu
+                    hồi, cập nhật sản phẩm và nhanh chóng cung cấp sản phẩm khác
+                    theo đúng nhu cầu của khách hàng. Trong trường hợp này, quý
+                    khách sẽ được miễn phí tiền ship ở bất kỳ khu vực nào.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section></section>
       </main>
     );
   }
