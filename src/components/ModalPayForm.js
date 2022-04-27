@@ -1,12 +1,14 @@
-import React, { useRef, useState } from "react";
-import useLocationForm from "./useLocationForm";
-import Select from "react-select";
-import { connect } from "react-redux";
-import { createOrder } from "../actions";
-import history from "../history";
-import Error from "./Error";
+import React, { useEffect, useRef, useState } from "react"
+import useLocationForm from "./useLocationForm"
+import Select from "react-select"
+import { connect } from "react-redux"
+import { createOrder } from "../actions"
+import history from "../history"
+import Error from "./Error"
 
-import showScroll from "./sub-components/showScroll";
+import emailjs from "@emailjs/browser"
+
+import showScroll from "./sub-components/showScroll"
 
 const ModalPayForm = function ({
   cart,
@@ -14,14 +16,15 @@ const ModalPayForm = function ({
   setModal,
   setModalAnnounce,
 }) {
-  const [err, setErr] = useState(null);
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [address, setAddress] = useState("");
-  const [payMethod, setPayMethod] = useState("");
+  const [name, setName] = useState("")
+  const [err, setErr] = useState(null)
+  const [phone, setPhone] = useState("")
+  const [email, setEmail] = useState("")
+  const [address, setAddress] = useState("")
+  const [payMethod, setPayMethod] = useState("tien mat")
+
   const { state, onCitySelect, onDistrictSelect, onWardSelect } =
-    useLocationForm(true);
+    useLocationForm(true)
 
   const {
     cityOptions,
@@ -30,22 +33,22 @@ const ModalPayForm = function ({
     selectedCity,
     selectedDistrict,
     selectedWard,
-  } = state;
-
+  } = state
+  const form = useRef()
   const countShip = () => {
     if (selectedCity?.label === "Hồ Chí Minh") {
-      return 20000;
+      return 20000
     } else {
-      return 30000;
+      return 30000
     }
-  };
+  }
 
-  const totalPrice = JSON.parse(localStorage.getItem("totalPrice")).reduce(
-    (sum, item) => {
-      return sum + item;
-    },
-    countShip()
-  );
+  // const totalPrice = JSON.parse(localStorage.getItem("totalPrice")).reduce(
+  //   (sum, item) => {
+  //     return sum + item
+  //   },
+  //   countShip()
+  // )
 
   const formValues = {
     productIds: JSON.parse(localStorage.getItem("productId")),
@@ -63,19 +66,47 @@ const ModalPayForm = function ({
     selectedCity,
     date: new Date(),
     payMethod,
-  };
+  }
+
+  // console.log(JSON.parse(localStorage.getItem("totalPrice")))
+  // console.log(totalPrice)
 
   return (
-    <form className="modal-pay" onClick={(e) => e.stopPropagation()}>
+    <div className="modal-pay" onClick={(e) => e.stopPropagation()}>
+      <div className="pay-close">
+        <button
+          className="btn modal-btn-close"
+          onClick={() => {
+            setModal(false)
+            showScroll()
+          }}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
       <div className="pay--1">
         <p className="sub-heading">Orinut</p>
         <p className="pay-heading">Thông tin giao hàng</p>
-        <div className="pay-form grid--2">
+        <form className="pay-form grid--2" ref={form}>
           <div className="flex--column pay-form--1">
             <label htmlFor="payName">Họ và tên</label>
             <input
               onChange={(e) => setName(e.target.value)}
               value={name}
+              name="user_name"
               type="text"
               className="pay purchase-input"
               id="payName"
@@ -94,6 +125,7 @@ const ModalPayForm = function ({
             <input
               onChange={(e) => setEmail(e.target.value)}
               value={email}
+              name="email"
               className="pay purchase-input"
               id="payEmail"
               type="email"
@@ -159,15 +191,16 @@ const ModalPayForm = function ({
               />
             </div>
           </div>
-        </div>
+        </form>
       </div>
+
       <div className="pay--2 flex--column">
         <div className="pay--2-sub">
           <p>Tạm tính</p>
           <p>
             {cart
               .reduce((sum, item) => {
-                return sum + item.totalPrice;
+                return sum + item.totalPrice
               }, 0)
               .toLocaleString("vi", {
                 style: "currency",
@@ -192,7 +225,7 @@ const ModalPayForm = function ({
           <p className="payment-amount">
             {cart
               .reduce((sum, item) => {
-                return sum + item.totalPrice;
+                return sum + item.totalPrice
               }, countShip())
               .toLocaleString("vi", {
                 style: "currency",
@@ -218,7 +251,7 @@ const ModalPayForm = function ({
               name="drone"
               value="chuyen khoan"
               onChange={(e) => {
-                setPayMethod(e.target.value);
+                setPayMethod(e.target.value)
               }}
             />
             <label htmlFor="cash">
@@ -230,50 +263,61 @@ const ModalPayForm = function ({
         <button
           className="btn purchase-btn payment-btn"
           onClick={(e) => {
-            e.preventDefault();
+            console.log(form.current)
+            e.preventDefault()
 
             if (formValues.name === "") {
-              setErr("nhập họ và tên");
-              return;
+              setErr("nhập họ và tên")
+              return
             } else if (formValues.phone === "") {
-              setErr("nhập số điện thoại");
-              return;
+              setErr("nhập số điện thoại")
+              return
             } else if (formValues.email === "") {
-              setErr("nhập email");
-              return;
+              setErr("nhập email")
+              return
             } else if (formValues.address === "") {
-              setErr("nhập địa chỉ");
-              return;
+              setErr("nhập địa chỉ")
+              return
             } else if (formValues.payMethod === "") {
-              setErr("chọn phương thức thanh toán");
-              return;
+              setErr("chọn phương thức thanh toán")
+              return
             }
+            emailjs
+              .sendForm(
+                "service_w0li9tk",
+                "template_b8ffo0z",
+                form.current,
+                "m3aDEkwqn06GXgsJ7"
+              )
+              .catch((e) => console.log(e))
 
             createOrder({
               ...formValues,
-            });
-            setModal(false);
-            localStorage.clear();
-            setModalAnnounce(true);
+            })
+
+            setModal(false)
+            localStorage.clear()
+            setModalAnnounce(true)
+
             setTimeout(function () {
-              history.push("/san-pham");
-            }, 3000);
-            showScroll();
+              history.push("/san-pham")
+            }, 3000)
+            showScroll()
           }}
         >
           Hoàn tất đơn hàng
         </button>
         {err === null ? null : <Error content={err} />}
       </div>
-    </form>
-  );
-};
+    </div>
+  )
+}
 
 const mapStateToProps = function (state) {
   return {
     fbId: state.fbAuth.userId,
     googleId: state.googleAuth.userId,
-  };
-};
+  }
+}
 
-export default connect(mapStateToProps, { createOrder })(ModalPayForm);
+export default connect(mapStateToProps, { createOrder })(ModalPayForm)

@@ -1,29 +1,29 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
-import { australia, vegemil, elmhurst, degrees137 } from "../../productStore";
-import MilkItem from "./MilkItem";
-import australiaImg from "../../images/australia.png";
-import vegemilImg from "../../images/vegemil.jpg";
-import elmhurstImg from "../../images/elmhurst.webp";
-import degreeImg from "../../images/degree.jpeg";
+import { australia, vegemil, elmhurst, degrees137 } from "../../productStore"
+import MilkItem from "./MilkItem"
+import australiaImg from "../../images/australia.png"
+import vegemilImg from "../../images/vegemil.jpg"
+import elmhurstImg from "../../images/elmhurst.webp"
+import degreeImg from "../../images/degree.jpeg"
 
 class Products extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   componentDidMount() {
     this.milkTypes = Array.from(
       document.querySelectorAll(".milk-type-container")
-    );
+    )
   }
 
   scrollToView = (type) => {
     type.scrollIntoView({
       behaviour: "smooth",
-    });
-  };
+    })
+  }
 
   render() {
     return (
@@ -92,7 +92,7 @@ class Products extends React.Component {
           </div>
           <div className="milk-items grid--4">
             {australia.map((item) => {
-              console.log(item.productImg);
+              // console.log(item.productImg);
               return (
                 <MilkItem
                   productImg={item.productImg}
@@ -102,7 +102,7 @@ class Products extends React.Component {
                   productUrl={item.productUrl}
                   key={item.productId}
                 />
-              );
+              )
             })}
           </div>
         </div>
@@ -158,8 +158,8 @@ class Products extends React.Component {
           </div>
         </div>
       </section>
-    );
+    )
   }
 }
 
-export default Products;
+export default Products
