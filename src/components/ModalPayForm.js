@@ -45,6 +45,14 @@ const ModalPayForm = function ({
 
   const productNames = JSON.parse(localStorage.getItem("productName"));
 
+  const today = function () {
+    const day = new Date().getDate();
+    const month = new Date().getMonth() + 1;
+    const year = new Date().getFullYear();
+
+    return `${day}/${month}/${year}`;
+  };
+
   const formValues = {
     productIds: JSON.parse(localStorage.getItem("productId")),
     quantities: JSON.parse(localStorage.getItem("quantity")),
@@ -59,7 +67,7 @@ const ModalPayForm = function ({
     selectedWard,
     selectedDistrict,
     selectedCity,
-    date: new Date(),
+    date: today(),
     payMethod,
   };
 
