@@ -1,14 +1,14 @@
-import React, { useEffect, useRef, useState } from "react"
-import useLocationForm from "./useLocationForm"
-import Select from "react-select"
-import { connect } from "react-redux"
-import { createOrder } from "../actions"
-import history from "../history"
-import Error from "./Error"
+import React, { useEffect, useRef, useState } from "react";
+import useLocationForm from "./useLocationForm";
+import Select from "react-select";
+import { connect } from "react-redux";
+import { createOrder } from "../actions";
+import history from "../history";
+import Error from "./Error";
 
-import emailjs from "@emailjs/browser"
+import emailjs from "@emailjs/browser";
 
-import showScroll from "./sub-components/showScroll"
+import showScroll from "./sub-components/showScroll";
 
 const ModalPayForm = function ({
   cart,
@@ -16,15 +16,15 @@ const ModalPayForm = function ({
   setModal,
   setModalAnnounce,
 }) {
-  const [name, setName] = useState("")
-  const [err, setErr] = useState(null)
-  const [phone, setPhone] = useState("")
-  const [email, setEmail] = useState("")
-  const [address, setAddress] = useState("")
-  const [payMethod, setPayMethod] = useState("tien mat")
+  const [name, setName] = useState("");
+  const [err, setErr] = useState(null);
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [address, setAddress] = useState("");
+  const [payMethod, setPayMethod] = useState("tien mat");
 
   const { state, onCitySelect, onDistrictSelect, onWardSelect } =
-    useLocationForm(true)
+    useLocationForm(true);
 
   const {
     cityOptions,
@@ -33,22 +33,17 @@ const ModalPayForm = function ({
     selectedCity,
     selectedDistrict,
     selectedWard,
-  } = state
-  const form = useRef()
+  } = state;
+  const form = useRef();
   const countShip = () => {
     if (selectedCity?.label === "Hồ Chí Minh") {
-      return 20000
+      return 20000;
     } else {
-      return 30000
+      return 30000;
     }
-  }
+  };
 
-  // const totalPrice = JSON.parse(localStorage.getItem("totalPrice")).reduce(
-  //   (sum, item) => {
-  //     return sum + item
-  //   },
-  //   countShip()
-  // )
+  const productNames = JSON.parse(localStorage.getItem("productName"));
 
   const formValues = {
     productIds: JSON.parse(localStorage.getItem("productId")),
@@ -66,19 +61,19 @@ const ModalPayForm = function ({
     selectedCity,
     date: new Date(),
     payMethod,
-  }
+  };
 
   // console.log(JSON.parse(localStorage.getItem("totalPrice")))
   // console.log(totalPrice)
 
   return (
-    <div className="modal-pay" onClick={(e) => e.stopPropagation()}>
+    <form ref={form} className="modal-pay" onClick={(e) => e.stopPropagation()}>
       <div className="pay-close">
         <button
           className="btn modal-btn-close"
           onClick={() => {
-            setModal(false)
-            showScroll()
+            setModal(false);
+            showScroll();
           }}
         >
           <svg
@@ -100,7 +95,7 @@ const ModalPayForm = function ({
       <div className="pay--1">
         <p className="sub-heading">Orinut</p>
         <p className="pay-heading">Thông tin giao hàng</p>
-        <form className="pay-form grid--2" ref={form}>
+        <div className="pay-form grid--2">
           <div className="flex--column pay-form--1">
             <label htmlFor="payName">Họ và tên</label>
             <input
@@ -115,6 +110,7 @@ const ModalPayForm = function ({
             <label htmlFor="payPhone">Số điện thoại</label>
             <input
               onChange={(e) => setPhone(e.target.value)}
+              name="user_phone"
               value={phone}
               className="pay purchase-input"
               id="payPhone"
@@ -135,10 +131,35 @@ const ModalPayForm = function ({
             <input
               onChange={(e) => setAddress(e.target.value)}
               value={address}
+              name="user_address"
               type="text"
               className="pay purchase-input"
               id="payAddress"
               required
+            />
+            <input
+              className="hidden"
+              value={formValues.quantities}
+              name="user_quantity"
+            />
+            <input
+              className="hidden"
+              value={formValues.quantities}
+              name="user_quantity"
+            />
+            <input
+              className="hidden"
+              name="message"
+              value={formValues.quantities.map((item, i) => {
+                return `${item} sản phẩm ${productNames[i]} ${
+                  i === productNames.length - 1 ? "." : ""
+                }`;
+              })}
+            />
+            <input
+              className="hidden"
+              name="user_totalPrice"
+              value={formValues.totalPrice}
             />
           </div>
           <div className="other-address flex--column">
@@ -191,7 +212,7 @@ const ModalPayForm = function ({
               />
             </div>
           </div>
-        </form>
+        </div>
       </div>
 
       <div className="pay--2 flex--column">
@@ -200,7 +221,7 @@ const ModalPayForm = function ({
           <p>
             {cart
               .reduce((sum, item) => {
-                return sum + item.totalPrice
+                return sum + item.totalPrice;
               }, 0)
               .toLocaleString("vi", {
                 style: "currency",
@@ -225,7 +246,7 @@ const ModalPayForm = function ({
           <p className="payment-amount">
             {cart
               .reduce((sum, item) => {
-                return sum + item.totalPrice
+                return sum + item.totalPrice;
               }, countShip())
               .toLocaleString("vi", {
                 style: "currency",
@@ -251,7 +272,7 @@ const ModalPayForm = function ({
               name="drone"
               value="chuyen khoan"
               onChange={(e) => {
-                setPayMethod(e.target.value)
+                setPayMethod(e.target.value);
               }}
             />
             <label htmlFor="cash">
@@ -263,24 +284,24 @@ const ModalPayForm = function ({
         <button
           className="btn purchase-btn payment-btn"
           onClick={(e) => {
-            console.log(form.current)
-            e.preventDefault()
+            console.log(form.current);
+            e.preventDefault();
 
             if (formValues.name === "") {
-              setErr("nhập họ và tên")
-              return
+              setErr("nhập họ và tên");
+              return;
             } else if (formValues.phone === "") {
-              setErr("nhập số điện thoại")
-              return
+              setErr("nhập số điện thoại");
+              return;
             } else if (formValues.email === "") {
-              setErr("nhập email")
-              return
+              setErr("nhập email");
+              return;
             } else if (formValues.address === "") {
-              setErr("nhập địa chỉ")
-              return
+              setErr("nhập địa chỉ");
+              return;
             } else if (formValues.payMethod === "") {
-              setErr("chọn phương thức thanh toán")
-              return
+              setErr("chọn phương thức thanh toán");
+              return;
             }
             emailjs
               .sendForm(
@@ -289,35 +310,35 @@ const ModalPayForm = function ({
                 form.current,
                 "m3aDEkwqn06GXgsJ7"
               )
-              .catch((e) => console.log(e))
+              .catch((e) => console.log(e));
 
             createOrder({
               ...formValues,
-            })
+            });
 
-            setModal(false)
-            localStorage.clear()
-            setModalAnnounce(true)
+            setModal(false);
+            localStorage.clear();
+            setModalAnnounce(true);
 
             setTimeout(function () {
-              history.push("/san-pham")
-            }, 3000)
-            showScroll()
+              history.push("/san-pham");
+            }, 3000);
+            showScroll();
           }}
         >
           Hoàn tất đơn hàng
         </button>
         {err === null ? null : <Error content={err} />}
       </div>
-    </div>
-  )
-}
+    </form>
+  );
+};
 
 const mapStateToProps = function (state) {
   return {
     fbId: state.fbAuth.userId,
     googleId: state.googleAuth.userId,
-  }
-}
+  };
+};
 
-export default connect(mapStateToProps, { createOrder })(ModalPayForm)
+export default connect(mapStateToProps, { createOrder })(ModalPayForm);
