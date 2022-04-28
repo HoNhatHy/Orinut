@@ -64,9 +64,9 @@ const ModalPayForm = function ({
     phone,
     email,
     address,
-    selectedWard,
-    selectedDistrict,
-    selectedCity,
+    ward: selectedWard.label,
+    district: selectedDistrict.label,
+    city: selectedCity.label,
     date: today(),
     payMethod,
   };
