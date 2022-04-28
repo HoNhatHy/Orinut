@@ -151,15 +151,16 @@ const ModalPayForm = function ({
               className="hidden"
               name="message"
               value={formValues.quantities.map((item, i) => {
-                return `${item} sản phẩm ${productNames[i]} ${
-                  i === productNames.length - 1 ? "." : ""
-                }`;
+                return `${item} sản phẩm ${productNames[i]}`;
               })}
             />
             <input
               className="hidden"
               name="user_totalPrice"
-              value={formValues.totalPrice}
+              value={formValues.totalPrice.toLocaleString("vi", {
+                style: "currency",
+                currency: "VND",
+              })}
             />
           </div>
           <div className="other-address flex--column">
