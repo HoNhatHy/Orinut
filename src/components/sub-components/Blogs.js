@@ -31,7 +31,13 @@ class Blogs extends React.Component {
                 .filter((_, i) => i <= 4)
                 .map((item) => {
                   return (
-                    <a className="new" href={item.link} target="_blank">
+                    <a
+                      className="new"
+                      href={item.link}
+                      target="_blank"
+                      key={item.link}
+                      rel="nofollow"
+                    >
                       <div className="new-date flex--column">
                         <span className="new-date-day">{item.day}</span>
                         <span className="new-date-month">{item.month}</span>

@@ -51,7 +51,7 @@ class Main extends React.Component {
             </div>
             <div className="hero-img-box">
               <picture>
-                <img src={heroImg} alt="Sữa Orinut" className="hero-img" />
+                <img src={heroImg} alt="Sữa hạt Orinut" className="hero-img" />
               </picture>
             </div>
           </div>
@@ -78,12 +78,12 @@ class Main extends React.Component {
             <div className="brand-img-box">
               <img
                 className="brand-img"
-                alt="Australia’s Own Organic"
+                alt="Sữa hạt Australia’s Own Organic"
                 src={australia}
               />
             </div>
             <div className="brand-img-box">
-              <img className="brand-img" alt="Vegemil" src={vegemil} />
+              <img className="brand-img" alt="Sữa hạt Vegemil" src={vegemil} />
             </div>
             <div className="brand-box">
               <p className="brand-number">02</p>
@@ -111,10 +111,18 @@ class Main extends React.Component {
               </p>
             </div>
             <div className="brand-img-box">
-              <img className="brand-img" alt="Elmhurst 1925" src={elmhurst} />
+              <img
+                className="brand-img"
+                alt="Sữa hạt Elmhurst 1925"
+                src={elmhurst}
+              />
             </div>
             <div className="brand-img-box">
-              <img className="brand-img" alt="137 Degree" src={degree} />
+              <img
+                className="brand-img"
+                alt="Sữa hạt 137 Degree"
+                src={degree}
+              />
             </div>
             <div className="brand-box">
               <p className="brand-number">04</p>

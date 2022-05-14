@@ -1,8 +1,8 @@
 export const australia = [
   {
     productId: "AOO01",
-    productName: "Australia's Own Organic Almond Milk Unsweetened",
-    productUrl: "australias-own-organic-almond-milk-unsweetened",
+    productName: `Sữa hạnh nhân không đường Australia's Own Organic`,
+    productUrl: "sua-hanh-nhan-khong-duong-australias-own-organic",
     productIng:
       "Nước, Muối, Hạnh nhân Organic (2.4%), Dầu hạt hướng dương Organic, Chất ổn định (Gellan Gum, Xantha Gum)",
     productNutrient: `
@@ -28,12 +28,12 @@ export const australia = [
     productPrice: 155000,
     unit: "1 hộp",
     volume: "1000ml",
-    productImg: require("../images/australia-almond-milk-unsweetened.jpg"),
+    productImg: require("../images/product-images/australia1.png"),
   },
   {
     productId: "AOO02",
-    productName: "Australia's Own Organic Almond Milk Original",
-    productUrl: "australias-own-organic-almond-milk-original",
+    productName: `Sữa hạnh nhân Australia's Own Organic`,
+    productUrl: "sua-hanh-nhan-australias-own-organic",
     productIng:
       "Nước, Muối, Hạnh nhân Organic (2.4%), Dầu hạt hướng dương Organic, Chất ổn định (Gellan Gum, Xantha Gum), Organic Agave Syrup",
     productNutrient: `
@@ -59,12 +59,12 @@ export const australia = [
     productPrice: 160000,
     unit: "1 hộp",
     volume: "1000ml",
-    productImg: require("../images/australia-almond-milk-original.jpg"),
+    productImg: require("../images/product-images/australia2.png"),
   },
   {
     productId: "AOO03",
-    productName: "Australia's Own Organic Coconut Milk Unsweetened",
-    productUrl: "australias-own-organic-coconut-milk-unsweetened",
+    productName: `Sữa dừa Australia's Own Organic`,
+    productUrl: "sua-dua-australias-own-organic",
     productIng:
       "Nước, Muối, Kem dừa Organic (7,5%), Chất ổn định (Locust Bean Gum, Sodium Alginate, Guar Gum).",
     productNutrient: `
@@ -88,12 +88,12 @@ export const australia = [
     productPrice: 135000,
     unit: "1 hộp",
     volume: "1000ml",
-    productImg: require("../images/australia-coconut-milk-unsweetened.png"),
+    productImg: require("../images/product-images/australia3.png"),
   },
   {
     productId: "AOO04",
-    productName: "Australia's Own Organic Rice Milk Original",
-    productUrl: "australias-own-organic-rice-milk-original",
+    productName: `Sữa gạo Australia's Own Organic`,
+    productUrl: "sua-gao-australias-own-organic",
     productIng:
       "Nước, Muối, Bột gạo (14%), Dầu hạt hướng dương Organic, Canxi tự nhiên.",
     productNutrient: `
@@ -118,12 +118,12 @@ export const australia = [
     productPrice: 120000,
     unit: "1 hộp",
     volume: "1000ml",
-    productImg: require("../images/australia-rice-milk-original.png"),
+    productImg: require("../images/product-images/australia4.png"),
   },
   {
     productId: "AOO05",
-    productName: "Australia's Own Organic Soy Milk Unsweetened",
-    productUrl: "australias-own-organic-soy-milk-unsweetened",
+    productName: `Sữa đậu nành Australia's Own Organic`,
+    productUrl: "sua-dau-nanh-australias-own-organic",
     productIng:
       "Nước, Muối, Đậu nành xay Organic, Dầu hạt hướng dương Organic, Chất điều chỉnh độ chua (Natri Bicarbonate), Chất ổn định (Carrageenan).",
     productNutrient: `
@@ -147,12 +147,12 @@ export const australia = [
     productPrice: 110000,
     unit: "1 hộp",
     volume: "1000ml",
-    productImg: require("../images/australia-soy-milk-unsweetened.png"),
+    productImg: require("../images/product-images/australia5.png"),
   },
   {
     productId: "AOO06",
-    productName: "Australia's Own Organic Oat Milk Unsweetened",
-    productUrl: "australias-own-organic-oat-milk-unsweetened",
+    productName: `Sữa yến mạch Australia's Own Organic`,
+    productUrl: "sua-yen-mach-australias-own-organic",
     productIng:
       "Nước, Muối, Yến Mạch Organic (11%), Dầu hạt hướng dương Organic, Canxi tự nhiên.",
     productNutrient: `
@@ -178,15 +178,15 @@ export const australia = [
     productPrice: 130000,
     unit: "1 hộp",
     volume: "1000ml",
-    productImg: require("../images/australia-oat-milk-unsweetened.jpg"),
+    productImg: require("../images/product-images/australia6.png"),
   },
 ];
 
 export const vegemil = [
   {
     productId: "VGM001",
-    productName: "Sữa đậu đen, hạnh nhân và óc chó Vegemil",
-    productUrl: "vegemil-sua-dau-den-hanh-nhan-va-oc-cho",
+    productName: `Sữa hạt đậu đen và hạnh nhân Vegemil`,
+    productUrl: "sua-hat-dau-den-va-hanh-nhan-vegemil",
     productIng:
       "4 loại hạt (đậu phộng, hạnh nhân, hạt óc chó và hạt thông) và đậu nành đen",
     productNutrient: `
@@ -207,12 +207,12 @@ export const vegemil = [
     productPrice: 70000,
     unit: "1 lốc x 4 hộp",
     volume: "190ml",
-    productImg: require("../images/sua-dau-den-hanh-nhan-va-oc-cho.jpeg"),
+    productImg: require("../images/product-images/vgm1.png"),
   },
   {
     productId: "VGM002",
-    productName: "Sữa đậu đen và 16 vị ngũ cốc Vegemil",
-    productUrl: "vegemil-sua-dau-den-va-16-vi-ngu-coc",
+    productName: `Sữa hạt đậu đen và 16 loại ngũ cốc Vegemil`,
+    productUrl: "sua-hat-dau-den-va-16-loai-ngu-coc-vegemil",
     productIng:
       "16 loại ngũ cốc (Lúa mạch, gạo lứt, ngô, gạo tẻ, lúa mì nguyên cám, kiều mạch, kê, gạo đen, đậu đỏ, gạo lứt, kê đuôi chồn, adlay, cao lương, gạo nếp, đậu xanh, ngô lúa mạch) và đậu nành đen",
     productNutrient: `
@@ -233,12 +233,12 @@ export const vegemil = [
     productPrice: 70000,
     unit: "lốc x 4 hộp",
     volume: "190ml",
-    productImg: require("../images/sua-dau-den-va-16-vi-ngu-coc.jpg"),
+    productImg: require("../images/product-images/vgm2.png"),
   },
   {
     productId: "VGM003",
     productName: "Sữa đậu nành Pororo & Loopy hương socola Vegemil",
-    productUrl: "vegemil-sua-dau-nanh-pororo-loopy-huong-socola",
+    productUrl: "sua-dau-nanh-pororo-loopy-huong-socola-vegemil",
     productIng:
       "Sữa đậu nành (nước tinh khiết, đậu nành 7%), nước, đường, malto oligosaccharide, syrup Chocolate, hỗn hợp canxi cacbonat, hương vị nhân tạo, muối",
     productNutrient: `
@@ -259,12 +259,12 @@ export const vegemil = [
     productPrice: 70000,
     unit: "lốc x 4 hộp",
     volume: "190ml",
-    productImg: require("../images/sua-dau-nanh-pororo-loopy-huong-socola.jpg"),
+    productImg: require("../images/product-images/vgm3.png"),
   },
   {
     productId: "VGM004",
     productName: "Sữa đậu nành Pororo & Loopy hương chuối Vegemil",
-    productUrl: "vegemil-sua-dau-nanh-pororo-loopy-huong-chuoi",
+    productUrl: "sua-dau-nanh-pororo-loopy-huong-chuoi-vegemil",
     productIng:
       "Sữa đậu nành (nước tinh khiết, đậu nành 7%), nước, đường, malto oligosaccharide, nước ép đậm đặc chuối, hỗn hợp canxi cacbonat, hương vị nhân tạo, muối.",
     productNutrient: `
@@ -285,15 +285,15 @@ export const vegemil = [
     productPrice: 70000,
     unit: "1 lốc x 4 hộp",
     volume: "190ml",
-    productImg: require("../images/sua-dau-nanh-pororo-loopy-huong-chuoi.jpg"),
+    productImg: require("../images/product-images/vgm4.png"),
   },
 ];
 
 export const elmhurst = [
   {
     productId: "EMH001",
-    productName: "Almond Milk Unsweetened",
-    productUrl: "elmhurst-almond-milk-unsweetened",
+    productName: "Sữa hạnh nhân không đường Elmhurst 1925",
+    productUrl: "sua-hanh-nhan-khong-duong-elmhurst-1925",
     productIng: "Nước lọc, hạt hạnh nhân ",
     productNutrient: `
       Năng lượng (31 kcal),
@@ -324,12 +324,12 @@ export const elmhurst = [
     productPrice: 260000,
     unit: "1 hộp",
     volume: "946ml",
-    productImg: require("../images/almond-milk-unsweetened.jpg"),
+    productImg: require("../images/product-images/emh1.png"),
   },
   {
     productId: "EMH002",
-    productName: "Cashew Milk Unsweetened",
-    productUrl: "elmhurst-cashew-milk-unsweetened",
+    productName: "Sữa hạt điều không đường Elmhurst 1925",
+    productUrl: "sua-hat-dieu-khong-duong-elmhurst-1925",
     productIng: "Nước lọc, hạt điều",
     productNutrient: `
       Năng lượng (31 cal),
@@ -359,12 +359,12 @@ export const elmhurst = [
     productPrice: 260000,
     unit: "1 hộp",
     volume: "946ml",
-    productImg: require("../images/cashew-milk-unsweetened.jpg"),
+    productImg: require("../images/product-images/emh2.png"),
   },
   {
     productId: "EMH003",
-    productName: "Oat Milk Unsweeetened",
-    productUrl: "elmhurst-oat-milk-unsweetened",
+    productName: "Sữa yến mạch không đường Elmhurst 1925",
+    productUrl: "sua-yen-mach-khong-duong-elmhurst-1925",
     productIng: "Nước lọc, yến mạch, muối",
     productNutrient: `
       Năng lượng (19 kcal),
@@ -395,12 +395,12 @@ export const elmhurst = [
     productPrice: 260000,
     unit: "1 hộp",
     volume: "946ml",
-    productImg: require("../images/oat-milk-unsweetened.jpg"),
+    productImg: require("../images/product-images/emh3.png"),
   },
   {
     productId: "EMH004",
-    productName: "Walnut Milk Unsweetened",
-    productUrl: "elmhurst-walnut-milk-unsweetened",
+    productName: "Sữa hạt óc chó không đường Elmhurst 1925",
+    productUrl: "sua-hat-oc-cho-khong-duong-elmhurst-1925",
     productIng: "Nước lọc, quả óc chó",
     productNutrient: `
       Năng lượng (28.7 kcal),
@@ -431,12 +431,12 @@ export const elmhurst = [
     productPrice: 260000,
     unit: "1 hộp",
     volume: "946ml",
-    productImg: require("../images/walnut-milk-unsweetened.jpg"),
+    productImg: require("../images/product-images/emh4.png"),
   },
   {
     productId: "EMH005",
-    productName: "Hazelnut Milk Unsweetened",
-    productUrl: "elmhurst-hazelnut-milk-unsweetened",
+    productName: "Sữa hạt phỉ không đường Elmhurst 1925",
+    productUrl: "sua-hat-phi-khong-duong-elmhurst-1925",
     productIng: "Nước lọc, hạt phỉ",
     productNutrient: `
       Năng lượng (21.5 kcal),
@@ -467,12 +467,12 @@ export const elmhurst = [
     productPrice: 260000,
     unit: "1 hộp",
     volume: "946ml",
-    productImg: require("../images/hazelnut-milk-unsweetened.png"),
+    productImg: require("../images/product-images/emh5.png"),
   },
   {
     productId: "EMH006",
-    productName: "Cashew Milk",
-    productUrl: "elmhurst-cashew-milk",
+    productName: "Sữa hạt điều vị nguyên bản Elmhurst 1925",
+    productUrl: "sua-hat-dieu-vi-nguyen-ban-elmhurst-1925",
     productIng: "Nước lọc, Hạt điều, Đường mía, Muối, Hương vị tự nhiên",
     productNutrient: `
       Năng lượng (31 cal),
@@ -503,12 +503,12 @@ export const elmhurst = [
     productPrice: 260000,
     unit: "1 hộp",
     volume: "946ml",
-    productImg: require("../images/cashew-milk.jpg"),
+    productImg: require("../images/product-images/emh6.png"),
   },
   {
     productId: "EMH007",
-    productName: "Chocolate Oat Milk",
-    productUrl: "elmhurst-chocolate-oat-milk",
+    productName: "Sữa hạt yến mạch vị socola Elmhurst 1925",
+    productUrl: "sua-hat-yen-mach-vi-socola-elmhurst-1925",
     productIng:
       "Nước lọc, Yến mạch nguyên hạt, Đường mía, Ca cao (Chế biến kiểu Hà Lan), Hương vị tự nhiên, Muối",
     productNutrient: `
@@ -540,15 +540,15 @@ export const elmhurst = [
     productPrice: 260000,
     unit: "1 hộp",
     volume: "946ml",
-    productImg: require("../images/chocolate-oat-milk.jpg"),
+    productImg: require("../images/product-images/emh7.png"),
   },
 ];
 
 export const degrees137 = [
   {
     productId: "DGR001",
-    productName: "Sữa hạnh nhân với bơ và rau củ",
-    productUrl: "137degrees-sua-hanh-nhan-bo-va-rau-cu",
+    productName: "Sữa hạnh nhân bơ và rau củ 137 Degrees",
+    productUrl: "sua-hanh-nhan-bo-va-rau-cu-137-degrees",
     productIng:
       "80% sữa hạt hạnh nhân, 11,5% rau hỗn hợp (bơ, rau bina, cải xoăn kale, bắp cải, bí đỏ, bí đao, khoai môn), 5% hạt hướng dương, 3% chất xơ, canxi, vitamin hỗn hợp.",
     productNutrient: `
@@ -578,12 +578,12 @@ export const degrees137 = [
     productPrice: 135000,
     unit: "1 hộp",
     volume: "1000ml",
-    productImg: require("../images/sua-hanh-nhan-bo-va-rau-cu.jpg"),
+    productImg: require("../images/product-images/dgr1.png"),
   },
   {
     productId: "DGR002",
-    productName: "Sữa hạnh nhân với cà rốt và rau củ",
-    productUrl: "137degrees-sua-hanh-nhan-ca-rot-va-rau-cu",
+    productName: "Sữa hạnh nhân cà rốt và rau củ 137 Degrees",
+    productUrl: "sua-hanh-nhan-ca-rot-va-rau-cu-137-degrees",
     productIng:
       "80% sữa hạt hạnh nhân, 11,5% rau hỗn hợp (Cà rốt, củ dền, cà chua, bí đỏ, khoai môn, bắp cải, rau bina, cải xoăn kale), 5% hạt hướng dương, 3% chất xơ.",
     productNutrient: `
@@ -613,12 +613,12 @@ export const degrees137 = [
     productPrice: 135000,
     unit: "1 hộp",
     volume: "1000ml",
-    productImg: require("../images/sua-hanh-nhan-ca-rot-va-rau-cu.jpg"),
+    productImg: require("../images/product-images/dgr2.png"),
   },
   {
     productId: "DGR003",
-    productName: "Sữa hạnh nhân với lúa mạch",
-    productUrl: "137degrees-sua-hanh-nhan-voi-lua-mach",
+    productName: "Sữa hạt hạnh nhân và mạch nha 137 Degrees",
+    productUrl: "sua-hat-hanh-nhan-va-mach-nha-137-degrees",
     productIng:
       "86,5% sữa hạt hạnh nhân, 8% chiết xuất mạch nha, 5% hạt hướng dương, canxi, vitamin hỗn hợp",
     productNutrient: `
@@ -649,12 +649,12 @@ export const degrees137 = [
     productPrice: 119000,
     unit: "1 hộp",
     volume: "1000ml",
-    productImg: require("../images/sua-hanh-nhan-voi-lua-mach.jpg"),
+    productImg: require("../images/product-images/dgr3.png"),
   },
   {
     productId: "DGR004",
-    productName: "Sữa hạnh nhân với bắp",
-    productUrl: "137degrees-sua-hanh-nhan-voi-bap",
+    productName: "Sữa hạt hạnh nhân và bắp 137 Degrees",
+    productUrl: "sua-hat-hanh-nhan-va-bap-137-degrees",
     productIng: "75% sữa hạt hạnh nhân, 24.5% sữa bắp",
     productNutrient: `
       Năng lượng (90 kcal),
@@ -683,12 +683,12 @@ export const degrees137 = [
     productPrice: 119000,
     unit: "1 hộp",
     volume: "1000ml",
-    productImg: require("../images/sua-hanh-nhan-voi-bap.jpg"),
+    productImg: require("../images/product-images/dgr4.png"),
   },
   {
     productId: "DGR005",
-    productName: "Sữa óc chó nguyên chất",
-    productUrl: "137degrees-sua-oc-cho-nguyen-chat",
+    productName: "Sữa hạt óc chó 137 Degrees",
+    productUrl: "sua-hat-oc-cho-137-degrees",
     productIng:
       "94% sữa hạt óc chó, 5% chiết xuất hướng dương, 1% mật hoa dừa hữu cơ",
     productNutrient: `
@@ -711,12 +711,12 @@ export const degrees137 = [
     productPrice: 135000,
     unit: "1 hộp",
     volume: "1000ml",
-    productImg: require("../images/sua-oc-cho-nguyen-chat.jpg"),
+    productImg: require("../images/product-images/dgr5.png"),
   },
   {
     productId: "DGR006",
-    productName: "Sữa hạt dẻ cười nguyên chất",
-    productUrl: "137degrees-sua-hat-de-cuoi-nguyen-chat",
+    productName: "Sữa hạt dẻ cười nguyên chất 137 Degrees",
+    productUrl: "sua-hat-de-cuoi-nguyen-chat-137-degrees",
     productIng:
       "60% sữa hạt dẻ, 34% hạt điều, 5% hạt hướng dương, 1% mật hoa dừa hữu cơ",
     productNutrient: `
@@ -739,7 +739,7 @@ export const degrees137 = [
     productPrice: 135000,
     unit: "1 hộp",
     volume: "1000ml",
-    productImg: require("../images/sua-hat-de-cuoi-nguyen-chat.jpg"),
+    productImg: require("../images/product-images/dgr6.png"),
   },
 ];
 
@@ -773,7 +773,7 @@ export const highlight = [
     productPrice: 155000,
     unit: "1 hộp",
     volume: "1000ml",
-    productImg: require("../images/australia-almond-milk-unsweetened.jpg"),
+    productImg: require("../images/product-images/australia1.png"),
   },
   {
     productId: "VGM001",
@@ -799,7 +799,7 @@ export const highlight = [
     productPrice: 70000,
     unit: "1 lốc x 4 hộp",
     volume: "190ml",
-    productImg: require("../images/sua-dau-den-hanh-nhan-va-oc-cho.jpeg"),
+    productImg: require("../images/product-images/vgm1.png"),
   },
   {
     productId: "EMH001",
@@ -835,7 +835,7 @@ export const highlight = [
     productPrice: 260000,
     unit: "1 hộp",
     volume: "946ml",
-    productImg: require("../images/almond-milk-unsweetened.jpg"),
+    productImg: require("../images/product-images/emh1.png"),
   },
   {
     productId: "DGR001",
@@ -870,6 +870,6 @@ export const highlight = [
     productPrice: 135000,
     unit: "1 hộp",
     volume: "1000ml",
-    productImg: require("../images/sua-hanh-nhan-bo-va-rau-cu.jpg"),
+    productImg: require("../images/product-images/dgr1.png"),
   },
 ];
