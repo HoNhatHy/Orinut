@@ -746,8 +746,8 @@ export const degrees137 = [
 export const highlight = [
   {
     productId: "AOO01",
-    productName: "Australia's Own Organic Almond Milk Unsweetened",
-    productUrl: "australias-own-organic-almond-milk-unsweetened",
+    productName: `Sữa hạnh nhân không đường Australia's Own Organic`,
+    productUrl: "sua-hanh-nhan-khong-duong-australias-own-organic",
     productIng:
       "Nước, Muối, Hạnh nhân Organic (2.4%), Dầu hạt hướng dương Organic, Chất ổn định (Gellan Gum, Xantha Gum)",
     productNutrient: `
@@ -777,8 +777,8 @@ export const highlight = [
   },
   {
     productId: "VGM001",
-    productName: "Sữa đậu đen, hạnh nhân và óc chó Vegemil",
-    productUrl: "vegemil-sua-dau-den-hanh-nhan-va-oc-cho",
+    productName: `Sữa hạt đậu đen và hạnh nhân Vegemil`,
+    productUrl: "sua-hat-dau-den-va-hanh-nhan-vegemil",
     productIng:
       "4 loại hạt (đậu phộng, hạnh nhân, hạt óc chó và hạt thông) và đậu nành đen",
     productNutrient: `
@@ -803,8 +803,8 @@ export const highlight = [
   },
   {
     productId: "EMH001",
-    productName: "Almond Milk Unsweetened",
-    productUrl: "elmhurst-almond-milk-unsweetened",
+    productName: "Sữa hạnh nhân không đường Elmhurst 1925",
+    productUrl: "sua-hanh-nhan-khong-duong-elmhurst-1925",
     productIng: "Nước lọc, hạt hạnh nhân ",
     productNutrient: `
       Năng lượng (31 kcal),
@@ -839,8 +839,8 @@ export const highlight = [
   },
   {
     productId: "DGR001",
-    productName: "Sữa hạnh nhân với bơ và rau củ",
-    productUrl: "137degrees-sua-hanh-nhan-bo-va-rau-cu",
+    productName: "Sữa hạnh nhân bơ và rau củ 137 Degrees",
+    productUrl: "sua-hanh-nhan-bo-va-rau-cu-137-degrees",
     productIng:
       "80% sữa hạt hạnh nhân, 11,5% rau hỗn hợp (bơ, rau bina, cải xoăn kale, bắp cải, bí đỏ, bí đao, khoai môn), 5% hạt hướng dương, 3% chất xơ, canxi, vitamin hỗn hợp.",
     productNutrient: `
