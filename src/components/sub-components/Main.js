@@ -20,8 +20,9 @@ class Main extends React.Component {
                 <span>Orinut &mdash; Sữa hạt nguyên bản</span>
                 <p className="hero-description">
                   Orinut là hệ thống chuyên phân phối những sản phẩm sữa hạt
-                  chất lượng có nguồn gốc nhập khẩu. Đảm bảo cho bạn có được
-                  nguồn sữa đầy đủ dinh dưỡng với giá cả hợp lý.
+                  dinh dưỡng có nguồn gốc nhập khẩu. Hãy tìm hiểu chi tiết hơn
+                  những sản phẩm tại Orinut để biết được sữa hạt có tốt không
+                  nhé.
                 </p>
               </h1>
               <div className="hero-btns">
