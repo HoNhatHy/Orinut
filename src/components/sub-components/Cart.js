@@ -155,8 +155,6 @@ const Cart = function (props) {
               }
               if (window.innerWidth > 800) {
                 hiddenScroll();
-              } else {
-                document?.querySelector(".modal-pay-box").style.height = "120vh";
               }
             }}
           >
