@@ -35,7 +35,7 @@ class FbAuth extends React.Component {
     window.FB.login((response) => {
       axios
         .get(
-          `http://graph.facebook.com/${response.authResponse.userID}/picture?type=square`
+          `https://graph.facebook.com/${response.authResponse.userID}/picture?type=square`
         )
         .then((res) => {
           if (response.status === "connected")
