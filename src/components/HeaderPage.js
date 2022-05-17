@@ -230,7 +230,10 @@ class HeaderPage extends React.Component {
             </li>
           </ul>
         </nav>
-        <div className="flex--row" style={{ justifySelf: "end" }}>
+        <div
+          className="flex--row"
+          style={{ justifySelf: "end", alignSelf: "center" }}
+        >
           {this.renderLogin()}
         </div>
         <LoginLogout
