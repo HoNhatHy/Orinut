@@ -11,6 +11,7 @@ class ModalPay extends React.Component {
         className="modal-pay-box modal-when-click"
         onClick={() => {
           this.props.setModal(false);
+          document.querySelector(".nav-btn").style.zIndex = "5";
           showScroll();
         }}
       >

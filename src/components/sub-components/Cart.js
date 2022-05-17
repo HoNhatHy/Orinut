@@ -142,6 +142,7 @@ const Cart = function (props) {
               if (!localStorage.getItem("productId")) return;
 
               setModal(true);
+              document.querySelector(".nav-btn").style.zIndex = "0";
               if (!document.querySelector(".header.sticky")) {
                 document
                   .querySelector(".header")
@@ -152,7 +153,11 @@ const Cart = function (props) {
                   block: "start",
                 });
               }
-              hiddenScroll();
+              if (window.innerWidth > 800) {
+                hiddenScroll();
+              } else {
+                document.querySelector(".modal-pay-box").style.height = "120vh";
+              }
             }}
           >
             Tiến hành thanh toán

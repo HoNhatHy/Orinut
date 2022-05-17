@@ -9,7 +9,7 @@ import scrollToMain from "./scrollToMain";
 import scrollToHeader from "./scrollToHeader";
 
 class HeaderPage extends React.Component {
-  state = { modalWhenClick: "" };
+  state = { modalWhenClick: "", navBtn: "menu" };
 
   componentDidMount() {
     const showStickyBar = () => {
@@ -91,20 +91,70 @@ class HeaderPage extends React.Component {
   render() {
     return (
       <div className="header">
-        <Link
-          to="/"
-          className="header-logo"
-          onClick={() => {
-            if (document.querySelector(".header.sticky")) {
-              scrollToMain();
-            } else {
-              scrollToHeader();
-            }
-          }}
-        >
-          <img src={logo} alt="Hnb Plant Milk" className="header-logo-img" />
-        </Link>
-        <nav className="header-nav">
+        <div className="nav-logo-container flex--row">
+          <button
+            className="nav-btn btn"
+            onClick={() => {
+              if (window.innerWidth <= 950) {
+                if (this.state.navBtn === "menu") {
+                  this.setState({ ...this.state, navBtn: "close" });
+                  document.querySelector(".header-nav").style.transform =
+                    "translateX(0)";
+                } else {
+                  this.setState({ ...this.state, navBtn: "menu" });
+                  document.querySelector(".header-nav").style.transform =
+                    "translateX(-100%)";
+                }
+              }
+            }}
+          >
+            {this.state.navBtn === "menu" ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="nav-btn-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="nav-btn-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            )}
+          </button>
+          <Link
+            to="/"
+            className="header-logo"
+            onClick={() => {
+              if (document.querySelector(".header.sticky")) {
+                scrollToMain();
+              } else {
+                scrollToHeader();
+              }
+            }}
+          >
+            <img src={logo} alt="Orinut" className="header-logo-img" />
+          </Link>
+        </div>
+        <nav className="header-nav flex--row">
           <ul className="header-nav-list">
             <li
               onClick={() => {
@@ -112,6 +162,12 @@ class HeaderPage extends React.Component {
                   scrollToMain();
                 } else {
                   scrollToHeader();
+                }
+
+                if (window.innerWidth <= 950) {
+                  this.setState({ ...this.state, navBtn: "menu" });
+                  document.querySelector(".header-nav").style.transform =
+                    "translateX(-100%)";
                 }
               }}
             >
@@ -126,6 +182,12 @@ class HeaderPage extends React.Component {
                 } else {
                   scrollToHeader();
                 }
+
+                if (window.innerWidth <= 950) {
+                  this.setState({ ...this.state, navBtn: "menu" });
+                  document.querySelector(".header-nav").style.transform =
+                    "translateX(-100%)";
+                }
               }}
             >
               <Link to="/blog" className="btn header-nav-btn">
@@ -138,6 +200,12 @@ class HeaderPage extends React.Component {
                   scrollToMain();
                 } else {
                   scrollToHeader();
+                }
+
+                if (window.innerWidth <= 950) {
+                  this.setState({ ...this.state, navBtn: "menu" });
+                  document.querySelector(".header-nav").style.transform =
+                    "translateX(-100%)";
                 }
               }}
               className="cart"
@@ -160,9 +228,11 @@ class HeaderPage extends React.Component {
                 Giỏ hàng
               </Link>
             </li>
-            <li>{this.renderLogin()}</li>
           </ul>
         </nav>
+        <div className="flex--row" style={{ justifySelf: "end" }}>
+          {this.renderLogin()}
+        </div>
         <LoginLogout
           hideModal={this.hideModal}
           modalWhenClick={this.state.modalWhenClick}

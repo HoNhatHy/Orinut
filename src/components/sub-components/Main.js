@@ -14,7 +14,7 @@ class Main extends React.Component {
     return (
       <main>
         <section className="section-hero">
-          <div className="hero grid--2">
+          <div className="hero">
             <div className="hero-text-box">
               <h1 className="heading-primary">
                 <span>Orinut &mdash; Sữa hạt nguyên bản</span>
@@ -63,7 +63,7 @@ class Main extends React.Component {
               Sản phẩm từ các thương hiệu nổi tiếng
             </h2>
           </div>
-          <div className="container grid grid--2 grid--center">
+          <div className="container grid grid--2 grid--center brands-container">
             <div className="brand-box">
               <p className="brand-number">01</p>
               <h3 className="heading-tertiary">Australia’s Own Organic</h3>

@@ -35,13 +35,6 @@ const ModalPayForm = function ({
     selectedWard,
   } = state;
   const form = useRef();
-  const countShip = () => {
-    if (selectedCity?.label === "Hồ Chí Minh") {
-      return 20000;
-    } else {
-      return 30000;
-    }
-  };
 
   const productNames = JSON.parse(localStorage.getItem("productName"));
 
@@ -71,6 +64,16 @@ const ModalPayForm = function ({
     payMethod,
   };
 
+  const countShip = () => {
+    if (selectedCity?.label === "Hồ Chí Minh") {
+      return 20000;
+    } else if (formValues?.totalPrice >= 1000000) {
+      return 0;
+    } else {
+      return 30000;
+    }
+  };
+
   // console.log(JSON.parse(localStorage.getItem("totalPrice")))
   // console.log(totalPrice)
 
@@ -81,6 +84,7 @@ const ModalPayForm = function ({
           className="btn modal-btn-close"
           onClick={() => {
             setModal(false);
+            document.querySelector(".nav-btn").style.zIndex = 5;
             showScroll();
           }}
         >
@@ -165,10 +169,13 @@ const ModalPayForm = function ({
             <input
               className="hidden"
               name="user_totalPrice"
-              value={formValues.totalPrice.toLocaleString("vi", {
-                style: "currency",
-                currency: "VND",
-              })}
+              value={(formValues.totalPrice + countShip()).toLocaleString(
+                "vi",
+                {
+                  style: "currency",
+                  currency: "VND",
+                }
+              )}
             />
           </div>
           <div className="other-address flex--column">

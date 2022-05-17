@@ -19,7 +19,7 @@ class Blogs extends React.Component {
           </div>
         </div>
         <div className="blogs-container">
-          <div className="blogs--1">
+          <div className="blog--1">
             {blogs.map((item) => {
               return <Blog blog={item} key={item.name} />;
             })}
