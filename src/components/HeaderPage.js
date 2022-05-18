@@ -154,7 +154,12 @@ class HeaderPage extends React.Component {
             <img src={logo} alt="Orinut" className="header-logo-img" />
           </Link>
         </div>
-        <nav className="header-nav flex--row">
+        <nav
+          className="header-nav flex--row"
+          style={
+            window.innerWidth <= 950 ? { transform: "translateX(-100%)" } : {}
+          }
+        >
           <ul className="header-nav-list">
             <li
               onClick={() => {
