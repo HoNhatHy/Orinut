@@ -25,7 +25,7 @@
   .container {
     max-width: 100rem;
   }
-  
+
   .hero-img {
     width: 95%;
   }
@@ -51,7 +51,7 @@
   .container {
     max-width: 95rem;
   }
-  
+
   .milk-item {
     max-width: 21rem;
   }
@@ -70,7 +70,7 @@
   }
 }
 
-@media(max-width: 950px) {
+@media (max-width: 950px) {
   .container {
     max-width: 90rem;
   }
@@ -121,7 +121,7 @@
     pointer-events: inherit;
     visibility: inherit;
     background-color: transparent;
-    z-index:5;
+    z-index: 5;
   }
 
   .header-nav {
@@ -132,7 +132,7 @@
     height: 100vh;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     z-index: 4;
   }
 
@@ -141,7 +141,7 @@
   }
 
   .detail-container {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .modal-announce {
@@ -162,7 +162,7 @@
   html {
     font-size: 56.25%;
   }
-  
+
   .header-logo-img {
     width: 7rem;
   }
@@ -184,7 +184,7 @@
   }
 
   .milk-items {
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 2.4rem;
   }
 
@@ -227,7 +227,7 @@
 
   .pay--1 {
     border-right: none;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding-bottom: 2.4rem;
   }
 
@@ -238,9 +238,9 @@
 
   .blog--2 {
     display: none;
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
   }
 }
 
@@ -293,7 +293,7 @@
   }
 
   .milk-items {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .footer {
@@ -350,7 +350,7 @@
 
   .types.container ul {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 2.4rem;
   }
 
@@ -374,6 +374,16 @@
   .modal-pay {
     max-width: 55rem;
     padding: 1.2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    max-width: 50rem;
+  }
+
+  .milk-item {
+    max-width: 23rem;
   }
 }
 
@@ -408,7 +418,7 @@
   }
 
   .blog-date {
-    top:3%;
+    top: 3%;
   }
 
   .blog-img {
