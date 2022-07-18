@@ -112,10 +112,6 @@ class App extends React.Component {
                 Trụ sở: 105 đường số 8, phường Linh Trung, thành phố Thủ Đức
               </p>
               <p>SĐT: 0905.577.176 &mdash; Email: orinut@gmail.com</p>
-              <p>
-                MST: 2901270911 - Số ĐKKD: 2901270911 cấp ngày 12/04/2022 bởi Sở
-                KH và ĐT thành phố HCM
-              </p>
             </div>
           </footer>
         </Router>
